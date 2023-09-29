@@ -1,0 +1,186 @@
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: 'main__article sidebar';
+  grid-template-rows: auto;
+  margin: 0 100px;
+}
+
+.main__article {
+  grid-area: main__article;
+  color: #cfc534;
+  display: grid;
+  grid-column-gap: 0px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.main__article .slideshow__container {
+  max-width: 1000px;
+  width: 100%;
+	margin: 0 auto 30px;
+  position: relative;
+}
+.main__article .slideshow__container img {
+  width: 100%;
+  height: 500px;
+  object-fit: fill
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/* Card Grid Layout */
+.main__article .card-grid__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
+}
+
+.main__article .card-grid__container .card-grid__item__title {
+  color: #d67f2d;
+}
+
+.main__article .card-grid__container .card-grid__item p {
+  color: #bbb;
+}
+
+
+/* Side Bar */
+.main__sidebar {
+  grid-area: sidebar;
+  margin-left: 20px;
+}
+
+.main__sidebar .social-page__list {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.main__sidebar .social-page__list .social-page__item {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+}
+
+.main__sidebar .social-page__list .social-page__item .social-page__item__content{
+  flex: 7;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.main__sidebar .social-page__list .social-page__item.facebook-page{
+  background-color: #5d78b6
+}
+
+.main__sidebar .social-page__list .social-page__item.twitter-page{
+  background-color: #2ea857
+}
+
+.main__sidebar .social-page__list .social-page__item.youtube-page{
+  background-color: #c25858
+}
+
+.main__sidebar .social-page__list .social-page__item i {
+  padding: 40px 20px;
+  font-size: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__sidebar .social-page__list .social-page__item i.fa-square-plus:hover {
+ scale: 1.4;
+}
+
+/* Sidebar rencent post */
+.main__sidebar .recent-post,
+.main__sidebar .playoffs,
+.main__sidebar .next-match {
+  color: #fff;
+  margin-top: 100px;
+}
+
+.main__sidebar .recent-post .recent-post__list{
+  list-style-type: none;
+  margin-top: 30px;
+  padding-inline-start: 0;
+}
+
+.main__sidebar .recent-post .recent-post__list .recent-post__item {
+  width: 100%;
+  height: 150px;
+  background-color: #2ea857;
+  margin-bottom: 10px;
+}
+
+.main__sidebar .playoffs .playoffs__table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #c25858;
+  border: solid 2px #fff;
+}
+
+.main__sidebar .playoffs .playoffs__table th,
+.main__sidebar .playoffs .playoffs__table td {
+  border-collapse: collapse;
+  height: 30px;
+  background-color: #c25858;
+  border: solid 2px #fff;
+}
+
+.main__sidebar .playoffs .playoffs__table td {
+  text-align: center;
+}
+
+.main__sidebar .next-match {
+  height: 400px;
+  width: 100%;
+}

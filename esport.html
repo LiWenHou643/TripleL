@@ -1,0 +1,603 @@
+<!-- Người thiết kế Home Page: Lê Nhật Bằng B2103489 -->
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="stylesheet" href="./css/esport.css" />
+		<link rel="shortcut icon" href="./images/fav.png" type="image/x-icon" />
+		<title>Home | TripleL News</title>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<a class="header__homelink" href="./home.html">
+				<img
+					src="./images/logo.png"
+					alt="logo"
+					class="header__homelink__logo"
+				/>
+			</a>
+			<ul class="header__navbar">
+				<li class="header__navbar__item">
+					<a href="./sport.html">SPORT</a>
+				</li>
+				<li class="header__navbar__item">
+					<a href="#home">HOME</a>
+				</li>
+				<li class="header__navbar__item">
+					<a class="header__navbar__item--active" href="./esport.html">ESPORT</a>
+				</li>
+			</ul>
+			<form class="header__search" method="get" action="">
+				<input
+					class="header__search__input"
+					type="text"
+					name="search"
+					placeholder=" Tìm kiếm"
+				/>
+				<button class="header__search__button" type="submit" title="search">
+					<!-- button decoration -->
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="29"
+						height="29"
+						viewBox="0 0 29 29"
+						fill="none"
+					>
+						<g clip-path="url(#clip0_2_17)">
+							<g filter="url(#filter0_d_2_17)">
+								<path
+									d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
+									stroke="white"
+									stroke-width="3"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									shape-rendering="crispEdges"
+								></path>
+							</g>
+						</g>
+						<defs>
+							<filter
+								id="filter0_d_2_17"
+								x="-0.418549"
+								y="3.70435"
+								width="29.7139"
+								height="29.7139"
+								filterUnits="userSpaceOnUse"
+								color-interpolation-filters="sRGB"
+							>
+								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+								<feColorMatrix
+									in="SourceAlpha"
+									type="matrix"
+									values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									result="hardAlpha"
+								/>
+								<feOffset dy="4"></feOffset>
+								<feGaussianBlur stdDeviation="2"></feGaussianBlur>
+								<feComposite in2="hardAlpha" operator="out" />
+								<feColorMatrix
+									type="matrix"
+									values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+								/>
+								<feBlend
+									mode="normal"
+									in2="BackgroundImageFix"
+									result="effect1_dropShadow_2_17"
+								/>
+								<feBlend
+									mode="normal"
+									in="SourceGraphic"
+									in2="effect1_dropShadow_2_17"
+									result="shape"
+								/>
+							</filter>
+							<clipPath id="clip0_2_17">
+								<rect
+									width="28.0702"
+									height="28.0702"
+									fill="white"
+									transform="translate(0.403503 0.526367)"
+								/>
+							</clipPath>
+						</defs>
+					</svg>
+					<!-- button decoration -->
+				</button>
+			</form>
+		</header>
+
+		<!-- Main -->
+		<main class="main">
+			<article class="main__article">
+				<!-- Slide show -->
+				<section class="slideshow__container">
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 4</div>
+								<img src="./images/esport/img1.jpg">
+						</div>
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 4</div>
+								<img src="./images/esport/img2.jpg">
+						</div>
+						<div class="mySlides fade">
+							<div class="numbertext">3 / 4</div>
+								<img src="./images/esport/img3.jpg">
+						</div>
+						<div class="mySlides fade">
+							<div class="numbertext">4 / 4</div>
+								<img src="./images/esport/img4.jpg">
+						</div>
+
+						<div style="text-align:center">
+							<span class="dot"></span> 
+							<span class="dot"></span> 
+							<span class="dot"></span> 
+							<span class="dot"></span> 
+						</div>
+				</section>
+				
+				<!-- News cards -->
+				<section class="card-grid__container">
+					<div class="card-grid__item">
+						<img src="" alt="" style="background-color: #4da8a4; width: 100%; height: 400px;">
+						<h1 class="card-grid__item__title">
+							Olympic medallist Bobridge charged with drug offences.
+						</h1>
+						<span class="date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="love">
+							<i class="fa-regular fa-heart"></i>
+							3251
+						</span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+					</div>
+					<div class="card-grid__item">
+						<img src="" alt="" style="background-color: #4da8a4; width: 100%; height: 400px;">
+						<h1 class="card-grid__item__title">
+							Olympic medallist Bobridge charged with drug offences.
+						</h1>
+						<span class="date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="love">
+							<i class="fa-regular fa-heart"></i>
+							3251
+						</span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+					</div>	
+					<div class="card-grid__item">
+						<img src="" alt="" style="background-color: #4da8a4; width: 100%; height: 400px;">
+						<h1 class="card-grid__item__title">
+							Olympic medallist Bobridge charged with drug offences.
+						</h1>
+						<span class="date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="love">
+							<i class="fa-regular fa-heart"></i>
+							3251
+						</span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+					</div>	
+					<div class="card-grid__item">
+						<img src="" alt="" style="background-color: #4da8a4; width: 100%; height: 400px;">
+						<h1 class="card-grid__item__title">
+							Olympic medallist Bobridge charged with drug offences.
+						</h1>
+						<span class="date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="love">
+							<i class="fa-regular fa-heart"></i>
+							3251
+						</span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+					</div>	
+					<div class="card-grid__item">
+						<img src="" alt="" style="background-color: #4da8a4; width: 100%; height: 400px;">
+						<h1 class="card-grid__item__title">
+							Olympic medallist Bobridge charged with drug offences.
+						</h1>
+						<span class="date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="love">
+							<i class="fa-regular fa-heart"></i>
+							3251
+						</span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+					</div>	
+					<div class="card-grid__item">
+						<img src="" alt="" style="background-color: #4da8a4; width: 100%; height: 400px;">
+						<h1 class="card-grid__item__title">
+							Olympic medallist Bobridge charged with drug offences.
+						</h1>
+						<span class="date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="love">
+							<i class="fa-regular fa-heart"></i>
+							3251
+						</span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+					</div>	
+				</section>
+			</article>
+
+			<div class="main__sidebar">
+				<ul class="social-page__list">
+					<li class="social-page__item facebook-page">
+						<i class="fa-brands fa-facebook-f"></i>
+						<div class="social-page__item__content">
+							<p>LIKE OUR FACEBOOK PAGE</p>
+							<p>4,032,001 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
+
+					<li class="social-page__item twitter-page">
+						<i class="fa-brands fa-twitter"></i>
+						<div class="social-page__item__content">
+							<p>LIKE OUR FACEBOOK TWITTER</p>
+							<p>3,294,213 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
+
+					<li class="social-page__item youtube-page">
+						<i class="fa-brands fa-youtube"></i>
+						<div class="social-page__item__content">
+							<p>LIKE OUR FACEBOOK YOUTUBE</p>
+							<p>2,953,314 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
+				</ul>
+				
+				<div class="recent-post">
+					<h1 class="recent-post__title">RECENT POST</h1>
+
+					<hr style="margin: 0 auto 5px 0">
+					<hr style="margin: 0 auto 5px 0">
+
+					<ul class="recent-post__list">
+						<li class="recent-post__item">
+
+						</li>
+						<li class="recent-post__item">
+
+						</li>
+						<li class="recent-post__item">
+
+						</li>
+						<li class="recent-post__item">
+
+						</li>
+						<li class="recent-post__item">
+
+						</li>
+					</ul>
+				</div>
+
+				<div class="playoffs">
+					<h1 class="playoffs__title">PLAYOFFS</h1>
+
+					<hr style="margin: 0 auto 5px 0;">
+					<hr style="margin: 0 auto 5px 0;">
+
+					<table class="playoffs__table">
+						<tr class="playoffs__table__row">
+						  <th class="playoffs__table__head">No</th>
+						  <th class="playoffs__table__head">Team</th>
+						  <th class="playoffs__table__head">Win</th>
+						  <th class="playoffs__table__head">Lose</th>
+						</tr>
+						<tr class="playoffs__table__row">
+						  <td class="playoffs__table__data">1</td>
+						  <td class="playoffs__table__data">
+							<img src="" width="50px" height="50px" style="background-color: azure;" alt="">
+							T1</td>
+						  <td class="playoffs__table__data">9</td>
+						  <td class="playoffs__table__data">1</td>
+						</tr>
+						<tr class="playoffs__table__row">
+						  <td class="playoffs__table__data">2</td>
+						  <td class="playoffs__table__data">
+							<img src="" width="50px" height="50px" style="background-color: azure;" alt="">
+							GEN G</td>
+						  <td class="playoffs__table__data">8</td>
+						  <td class="playoffs__table__data">2</td>
+						</tr>
+						<tr class="playoffs__table__row">
+						  <td class="playoffs__table__data">3</td>
+						  <td class="playoffs__table__data">
+							<img src="" width="50px" height="50px" style="background-color: azure;" alt="">
+							SSG</td>
+						  <td class="playoffs__table__data">8</td>
+						  <td class="playoffs__table__data">2</td>
+						</tr>
+						<tr class="playoffs__table__row">
+						  <td class="playoffs__table__data">4</td>
+						  <td class="playoffs__table__data">
+							<img src="" width="50px" height="50px" style="background-color: azure;" alt="">
+							KT</td>
+						  <td class="playoffs__table__data">8</td>
+						  <td class="playoffs__table__data">2</td>
+						</tr>
+						<tr class="playoffs__table__row">
+						  <td class="playoffs__table__data">5</td>
+						  <td class="playoffs__table__data">
+							<img src="" width="50px" height="50px" style="background-color: azure;" alt="">
+							DK</td>
+						  <td class="playoffs__table__data">8</td>
+						  <td class="playoffs__table__data">2</td>
+						</tr>
+						<tr class="playoffs__table__row">
+						  <td class="playoffs__table__data">6</td>
+						  <td class="playoffs__table__data">
+							<img src="" width="50px" height="50px" style="background-color: azure;" alt="">
+							HLE</td>
+						  <td class="playoffs__table__data">8</td>
+						  <td class="playoffs__table__data">2</td>
+						</tr>
+						<tr class="playoffs__table__row">
+						  <td class="playoffs__table__data">7</td>
+						  <td class="playoffs__table__data">
+							<img src="" width="50px" height="50px" style="background-color: azure;" alt="">
+							DRX</td>
+						  <td class="playoffs__table__data">8</td>
+						  <td class="playoffs__table__data">2</td>
+						</tr>
+						<tr class="playoffs__table__row">
+						  <td class="playoffs__table__data">8</td>
+						  <td class="playoffs__table__data">
+							<img src="" width="50px" height="50px" style="background-color: azure;" alt="">
+							LSB</td>
+						  <td class="playoffs__table__data">8</td>
+						  <td class="playoffs__table__data">2</td>
+						</tr>
+						<tr class="playoffs__table__row">
+						  <td class="playoffs__table__data">9</td>
+						  <td class="playoffs__table__data">
+							<img src="" width="50px" height="50px" style="background-color: azure;" alt="">
+							NS</td>
+						  <td class="playoffs__table__data">8</td>
+						  <td class="playoffs__table__data">2</td>
+						</tr>
+					  </table>
+				</div>
+
+				<div class="next-match">
+					<h1>CHAMPIONSHIP QUARTER FINALS</h1>
+					<div class="display-date">
+						<span id="day">day</span>,
+						<span id="daynum">00</span>
+						<span id="month">month</span>
+						<span id="year">0000</span>
+					</div>
+				</div>
+
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<!-- Grid column -->
+			<div>
+				<!-- Content -->
+				<h2>
+					<a href="">
+						<img src="./images/logo.png" width="80px" height="50px" alt="logo" /> 
+					</a>
+					<span class="ml-3">TripleL</span>
+				</h2>
+				<p>
+					Chúng tôi luôn săn lùng những tin tức hot hòn họt, luôn cập nhật nhanh chóng và chính xác đến cho mọi người.
+				</p>
+				<p>
+					Theo dõi chúng tôi:
+				</p>
+				<div class="social-link">
+					<a href="#">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+					<a href="">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="">
+						<i class="fab fa-google"></i>
+					</a>
+					<a href="">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div>
+				<!-- Links -->
+				<h2>
+					<i class="fa-solid fa-hashtag mr-4" style="color: #4da8a4"></i>
+					Site
+				</h2>
+				<p>
+					<a href="#!"
+						>Sport: Football, Basketball, Badminton, Chess, ...</a
+					>
+				</p>
+				<p>
+					<a href="#!"
+						>Esport: LoL, Dota, Valorant, CSGO, ...</a
+					>
+				</p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div>
+				<!-- Links -->
+				<h2>
+					<i class="fa-regular fa-address-card mr-4" style="color: #4da8a4"></i>
+					Contact
+				</h2>
+				<p>
+					<i class="fa-solid fa-location-dot mr-4" style="color: #4da8a4"></i
+					>CTU, CAN THO, VIETNAM
+				</p>
+				<hr class="mr-5" />
+				<p>
+					<i class="fa-solid fa-envelope mr-4" style="color: #4da8a4"></i
+					>tripleL@gmail.com
+				</p>
+				<hr class="mr-5" />
+				<p>
+					<i class="fa-solid fa-phone mr-4" style="color: #4da8a4"></i
+					>+ 01 234 567 88
+				</p>
+				<hr class="mr-5" />
+				<p>
+					<i class="fa-solid fa-phone mr-4" style="color: #4da8a4"></i
+					>+ 01 234 567 89
+				</p>
+				<hr class="mr-5" />
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="post-gallery">
+				<!-- Links -->
+				<h2>
+					<i class="fa-regular fa-image mr-4" style="color: #4da8a4"></i>
+					Post gallery
+				</h2>
+
+				<div class="post-gallery__item mb-4">
+					<a href=""
+						><img src="./images/home/img1.jpg" alt="anh1"
+					/></a>
+					<a href=""
+						><img src="./images/home/img2.jpg" alt="anh1"
+					/></a>
+					<a href=""
+						><img src="./images/home/img3.jpg" alt="anh1"
+					/></a>
+					<a href=""
+						><img src="./images/home/img4.jpg" alt="anh1"
+					/></a>
+					<a href=""
+						><img src="./images/home/img5.jpg" alt="anh1"
+					/></a>
+					<a href=""
+						><img src="./images/home/img6.jpg" alt="anh1"
+					/></a>
+					<a href=""
+						><img src="./images/home/img7.jpg" alt="anh1"
+					/></a>
+					<a href=""
+						><img src="./images/home/img8.jpg" alt="anh1"
+					/></a>
+
+				</div>
+			</div>
+			<!-- Grid column -->
+		</footer>
+		<!-- Footer -->
+
+		<!-- Slideshow javascript -->
+		<script>
+			let slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 3000);
+			}
+		</script>
+
+		<!-- Current Day javascript -->
+		<script>
+			function updateDate() {
+			let today = new Date();
+
+			// return number
+			let dayName = today.getDay(),
+				dayNum = today.getDate(),
+				month = today.getMonth(),
+				year = today.getFullYear();
+
+			const months = [
+				"January",
+				"February",
+				"March",
+				"April",
+				"May",
+				"June",
+				"July",
+				"August",
+				"September",
+				"October",
+				"November",
+				"December",
+			];
+			const dayWeek = [
+				"Sunday",
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+			];
+			// value -> ID of the html element
+			const IDCollection = ["day", "daynum", "month", "year"];
+			// return value array with number as a index
+			const val = [dayWeek[dayName], dayNum, months[month], year];
+			for (let i = 0; i < IDCollection.length; i++) {
+				document.getElementById(IDCollection[i]).firstChild.nodeValue = val[i];
+			}
+			}
+
+			updateDate();
+		</script>
+
+	</body>
+</html>
