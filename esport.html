@@ -1,707 +1,759 @@
 <!-- Người thiết kế Home Page: Lê Nhật Bằng B2103489 -->
 <!DOCTYPE html>
 <html lang="vi">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="./css/base.css" />
-		<link rel="stylesheet" href="./css/all.css" />
-		<link rel="stylesheet" href="./css/esport.css" />
-		<link rel="shortcut icon" href="./images/fav.png" type="image/x-icon" />
-		<title>Home | TripleL News</title>
-	</head>
 
-	<body>
-		<!-- Header -->
-		<header class="header">
-			<a class="header__homelink" href="./home.html">
-				<img
-					src="./images/logo.png"
-					alt="logo"
-					class="header__homelink__logo"
-				/>
-			</a>
-			<ul class="header__navbar">
-				<li class="header__navbar__item">
-					<a href="./sport.html">SPORT</a>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/base.css" />
+	<link rel="stylesheet" href="./css/all.css" />
+	<link rel="stylesheet" href="./css/esport.css" />
+	<link rel="shortcut icon" href="./images/fav.png" type="image/x-icon" />
+	<title>Home | TripleL News</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="header">
+		<a class="header__homelink" href="./home.html">
+			<img src="./images/logo.png" alt="logo" class="header__homelink__logo" />
+		</a>
+		<ul class="header__navbar">
+			<li class="header__navbar__item">
+				<a href="./sport.html">SPORT</a>
+			</li>
+			<li class="header__navbar__item">
+				<a href="#home">HOME</a>
+			</li>
+			<li class="header__navbar__item">
+				<a class="header__navbar__item--active" href="./esport.html">ESPORT</a>
+			</li>
+		</ul>
+		<form class="header__search" method="get" action="">
+			<input class="header__search__input" type="text" name="search" placeholder=" Tìm kiếm" />
+			<button class="header__search__button" type="submit" title="search">
+				<!-- button decoration -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+					<g clip-path="url(#clip0_2_17)">
+						<g filter="url(#filter0_d_2_17)">
+							<path
+								d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
+								stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+								shape-rendering="crispEdges"></path>
+						</g>
+					</g>
+					<defs>
+						<filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139"
+							filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix" />
+							<feColorMatrix in="SourceAlpha" type="matrix"
+								values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+							<feOffset dy="4"></feOffset>
+							<feGaussianBlur stdDeviation="2"></feGaussianBlur>
+							<feComposite in2="hardAlpha" operator="out" />
+							<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+							<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17" />
+							<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape" />
+						</filter>
+						<clipPath id="clip0_2_17">
+							<rect width="28.0702" height="28.0702" fill="white"
+								transform="translate(0.403503 0.526367)" />
+						</clipPath>
+					</defs>
+				</svg>
+				<!-- button decoration -->
+			</button>
+		</form>
+	</header>
+
+	<!-- Main -->
+	<main class="main">
+		<article class="main__article">
+			<!-- Slide show -->
+			<section class="slideshow__container">
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 4</div>
+					<img src="./images/esport/img1.jpg" />
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 4</div>
+					<img src="./images/esport/img2.jpg" />
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 4</div>
+					<img src="./images/esport/img3.jpg" />
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">4 / 4</div>
+					<img src="./images/esport/img4.jpg" />
+				</div>
+
+				<div style="text-align: center">
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+			</section>
+
+			<!-- News cards -->
+			<section class="card-grid__container">
+				<div class="card-grid__item">
+					<img class="card-grid__item__img" src="./images/esport/grid-card/img1.jpg" alt="" />
+					<h3 class="card-grid__item__title">
+						Trực tiếp Liên Minh ASIAD 2023 hôm nay 29/9: LMHT Việt Nam ngẩng
+						cao đầu rời cuộc chơi
+					</h3>
+					<span class="card-grid__item__date">
+						<i class="fa-regular fa-clock"></i>
+						28/9/2023
+					</span>
+					<span class="card-grid__item__love active">
+						<i class="fa-regular fa-heart not-loved"></i>
+						<i class="fa-solid fa-heart loved"></i>
+						99251
+					</span>
+					<p>
+						Tuy không thể giành huy chương tại ASIAD 19, nhưng Việt Nam vẫn
+						khiến người hâm mộ hài lòng với màn trình diễn của mình. Vươn lên
+						với màn trình diễn thuyết phục, đồng thời khiến chủ nhà Trung Quốc
+						toát mồ hôi trong ván đấu quyết định, đội tuyển LMHT Việt Nam đã
+						kết thúc giải đấu với những ấn tượng khó phai.
+					</p>
+				</div>
+				<div class="card-grid__item">
+					<img class="card-grid__item__img" src="./images/esport/grid-card/img2.jpg" alt="" />
+					<h3 class="card-grid__item__title">
+						ASIAD 19: Cuộc đua tìm kiếm tấm huy chương vàng LMHT đã ngã ngũ,
+						hướng đến một CKTG bùng nổ
+					</h3>
+					<span class="card-grid__item__date">
+						<i class="fa-regular fa-clock"></i>
+						28/9/2023
+					</span>
+					<span class="card-grid__item__love">
+						<i class="fa-regular fa-heart not-loved"></i>
+						<i class="fa-solid fa-heart loved"></i>
+						3251
+					</span>
+					<p>
+						Tiếp đến trận Chung kết, không có gì bất ngờ khi Hàn Quốc thành
+						công có được tấm HCV danh giá. Đại diện xứ kim chi kiểm soát hoàn
+						toàn thế trận và không cho Đài Bắc Trung Hoa có bất cứ cơ hội phản
+						công nào. Với tấm HCV danh giá này, các tuyển thủ LMHT Hàn Quốc đã
+						chính thức được miễn NVQS theo quy định của Hàn Quốc. Các tuyển
+						thủ này sẽ chỉ phải lao động công ích trong một thời gian ngắn và
+						sẽ không ảnh hưởng đến thi đấu tại các giải đấu của Riot Games.
+					</p>
+				</div>
+				<div class="card-grid__item">
+					<img class="card-grid__item__img" src="./images/esport/grid-card/img3.jpg" alt="" />
+					<h3 class="card-grid__item__title">
+						CKTG 2023: Danh sách các đội giành vé tới CKTG tại Hàn Quốc vào
+						tháng 10 năm nay
+					</h3>
+					<span class="card-grid__item__date">
+						<i class="fa-regular fa-clock"></i>
+						28/9/2023
+					</span>
+					<span class="card-grid__item__love">
+						<i class="fa-regular fa-heart not-loved"></i>
+						<i class="fa-solid fa-heart loved"></i>
+						3251
+					</span>
+					<p>
+						Các giải đấu quốc nội LMHT đang dần kết thúc và tìm ra những cái
+						tên xuất sắc nhất tiến đến CKTG 2023. Mùa giải 2023, Riot Games
+						không chỉ đưa CKTG quay trở lại xứ Kim Chi mà còn mang đến một
+						“luồng gió” mới với thể thức thi đấu hấp dẫn mới. CKTG 2023 sẽ
+						được đồng tổ chức bởi Thành phố Seoul và Thành phố Busan vào tháng
+						10 tới đây.
+					</p>
+				</div>
+				<div class="card-grid__item">
+					<img class="card-grid__item__img" src="./images/esport/grid-card/img4.jpg" alt="" />
+					<h3 class="card-grid__item__title">
+						LMHT: Người hâm mộ BTS tranh cãi nảy lửa về việc Faker được miễn
+						"nghĩa vụ quân sự"
+					</h3>
+					<span class="card-grid__item__date">
+						<i class="fa-regular fa-clock"></i>
+						28/9/2023
+					</span>
+					<span class="card-grid__item__love">
+						<i class="fa-regular fa-heart not-loved"></i>
+						<i class="fa-solid fa-heart loved"></i>
+						3251
+					</span>
+					<p>
+						Esports tại Hàn Quốc từ lâu đã rất phát triển và được coi như một
+						môn thể thao chính thống. Các tuyển thủ tại xứ Kim Chi cũng được
+						công nhận như một VĐV Quốc Gia. Thậm chí tại Hàn Quốc còn có những
+						trường học chuyên đào tạo tuyển thủ để hướng đến một môn thể thao
+						phát triển. Bởi vậy, khi Esports được công nhận tại ASIAD 19 như
+						một môn thể thao truyền thống, cạnh tranh huy chương, các tuyển
+						thủ đã không bỏ lỡ cơ hội này để giành về tấm HCV.
+					</p>
+				</div>
+				<div class="card-grid__item">
+					<img class="card-grid__item__img" src="./images/esport/grid-card/img5.jpg" alt="" />
+					<h3 class="card-grid__item__title">
+						Riot Games thay đổi quy tắc đội hình cho mùa giải Valorant
+						Champions Tour 2024
+					</h3>
+					<span class="card-grid__item__date">
+						<i class="fa-regular fa-clock"></i>
+						28/9/2023
+					</span>
+					<span class="card-grid__item__love">
+						<i class="fa-regular fa-heart not-loved"></i>
+						<i class="fa-solid fa-heart loved"></i>
+						3251
+					</span>
+					<p>
+						Việc cho phép game thủ hai chiều là một trong những thay đổi lớn
+						nhất đối với quy tắc xây dựng đội hình năm 2024. Những người chơi
+						này đủ điều kiện để thi đấu cho đội VCT và cả đội phụ. Các đội VCT
+						có thể có tối đa 2 người chơi hai chiều được chỉ định trong danh
+						sách đầy đủ của họ. Đặc biệt, Riot cũng đang thiết lập một khoảng
+						thời hạn 14 ngày gọi là "safe harbor" để khi những tuyển thủ rời
+						khỏi các đội tuyển tham gia giải VCT có thể tìm được bến đỗ mới.
+					</p>
+				</div>
+				<div class="card-grid__item">
+					<img class="card-grid__item__img" src="./images/esport/grid-card/img6.jpg" alt="" />
+					<h3 class="card-grid__item__title">
+						Rò rỉ những hình ảnh đầu tiên của VALORANT Mobile, fan vỡ òa trong
+						sung sướng
+					</h3>
+					<span class="card-grid__item__date">
+						<i class="fa-regular fa-clock"></i>
+						28/9/2023
+					</span>
+					<span class="card-grid__item__love">
+						<i class="fa-regular fa-heart not-loved"></i>
+						<i class="fa-solid fa-heart loved"></i>
+						3251
+					</span>
+					<p>
+						Mang phong cách và trải nghiệm cá nhân tới đấu trường cạnh tranh
+						toàn cầu. Sử dụng kỹ năng đấu súng cùng với lối tư duy chiến thuật
+						sắc bén với hai phe tấn công và phòng thủ, thành bại được định
+						đoạt chỉ trong 13 vòng đấu. Với chỉ 1 mạng mỗi vòng đấu, sự nhanh
+						nhẹn và quyết đoán sẽ là yếu tố giúp bạn sống sót. Trải nghiệm
+						VALORANT trong các chế độ chơi: Đấu Xếp Hạng, Đấu Thường, Sinh Tử
+						và Spike Thần Tốc.
+					</p>
+				</div>
+				<div class="card-grid__item">
+					<img class="card-grid__item__img" src="./images/esport/grid-card/img7.jpg" alt="" />
+					<h3 class="card-grid__item__title">
+						Trước thềm CKTG 2023, LPL bị chính khán giả nhà xếp hạng ngang với
+						"khu vực wildcard"
+					</h3>
+					<span class="card-grid__item__date">
+						<i class="fa-regular fa-clock"></i>
+						28/9/2023
+					</span>
+					<span class="card-grid__item__love">
+						<i class="fa-regular fa-heart not-loved"></i>
+						<i class="fa-solid fa-heart loved"></i>
+						3251
+					</span>
+					<p>
+						Những gì đã thể hiện tại ASIAD cho thấy có rất nhiều tuyển thủ của
+						LPL hiện tại chưa thực sự sẵn sàng ở CKTG 2023. Nếu bỏ qua hai
+						tuyển thủ đến từ Edward Gaming (đội không có suất dự CKTG 2023)
+						thì những cái tên như Bin hay Elk khó lòng sánh được với Ruler,
+						Zeus và trận đối đầu giữa họ đã chứng minh điều này. Có lẽ, chỉ
+						mỗi Knight là thực sự vẫn giữ được phong độ cho các cuộc đối đầu
+						LCK sắp tới ở Hàn Quốc
+					</p>
+				</div>
+				<div class="card-grid__item">
+					<img class="card-grid__item__img" src="./images/esport/grid-card/img8.jpg" alt="" />
+					<h3 class="card-grid__item__title">
+						Vừa trở lại rank Hàn, Faker đã nhận "trái đắng", nhưng lại khiến
+						cộng đồng LMHT vô cùng xúc động
+					</h3>
+					<span class="card-grid__item__date">
+						<i class="fa-regular fa-clock"></i>
+						28/9/2023
+					</span>
+					<span class="card-grid__item__love">
+						<i class="fa-regular fa-heart not-loved"></i>
+						<i class="fa-solid fa-heart loved"></i>
+						3251
+					</span>
+					<p>
+						Như đã biết, vừa qua Faker đã cùng các đồng đội tại đội Liên Minh
+						Huyền Thoại (LMHT) Việt Nam giành Huy chương Vàng ASIAD. Tuy
+						nhiên, không thể ăn mừng được lâu, khi ngay sau giải đấu này, các
+						tuyển thủ chỉ có một quãng thời gian nghỉ ngơi cực ngắn, trước khi
+						bước vào Chung kết thế giới (CKTG) 2023. Giải đấu quốc tế lớn nhất
+						của làng LMHT cũng quan trọng không kém với Faker và T1 khi họ đã
+						"gục ngã trước cổng thiên đường" vào năm ngoái.
+					</p>
+				</div>
+				<div class="card-grid__item">
+					<img class="card-grid__item__img" src="./images/esport/grid-card/img9.jpg" alt="" />
+					<h3 class="card-grid__item__title">
+						Truyền thông Hàn xếp hạng 20 tuyển thủ mạnh nhất CKTG 2023, Faker
+						bất ngờ "bật bãi"
+					</h3>
+					<span class="card-grid__item__date">
+						<i class="fa-regular fa-clock"></i>
+						28/9/2023
+					</span>
+					<span class="card-grid__item__love">
+						<i class="fa-regular fa-heart not-loved"></i>
+						<i class="fa-solid fa-heart loved"></i>
+						3251
+					</span>
+					<p>
+						Mới đây, truyền thông Hàn đã tung ra kết quả bình chọn Top 20
+						tuyển thủ được đánh giá là mạnh nhất sẽ góp mặt tại CKTG 2023.
+						Theo đó, toàn bộ dàn sao của JDG và Gen.G đều góp mặt và Ruler là
+						tuyển thủ xếp hạng nhất trong khi Chovy ở ngay sau với vị trí thứ
+						hai. Điều này hoàn toàn hợp lý khi cả hai đều là linh hồn trong
+						lối chơi của đội chủ quản. Chưa kể, Ruler đang có phong độ rất cao
+						còn Chovy vừa có chức vô địch LCK thứ ba liên tiếp trong sự
+						nghiệp.
+					</p>
+				</div>
+				<div class="card-grid__item">
+					<img class="card-grid__item__img" src="./images/esport/grid-card/img10.jpg" alt="" />
+					<h3 class="card-grid__item__title">
+						BLV Hoàng Luân buông lời phũ phàng về thành tích ASIAD của LMHT
+						Việt, fan ngẫm lại đúng vô cùng
+					</h3>
+					<span class="card-grid__item__date">
+						<i class="fa-regular fa-clock"></i>
+						28/9/2023
+					</span>
+					<span class="card-grid__item__love">
+						<i class="fa-regular fa-heart not-loved"></i>
+						<i class="fa-solid fa-heart loved"></i>
+						3251
+					</span>
+					<p>
+						Đối với riêng BLV Hoàng Luân, anh thừa nhận bản thân không hài
+						lòng với những gì mà các tuyển thủ LMHT Việt thể hiện ở Hàng Châu.
+						Trong một buổi stream gần đây, nam BLV thẳng thắn đặt câu hỏi:
+						"Tại sao các tuyển thủ Việt cứ phải để đến khi không còn bất kỳ
+						mục tiêu nào tranh đấu thì mới chịu thể hiện một cách tốt nhất?".
+						Theo nam BLV, điều này đã lặp đi lặp lại không ít lần trong quá
+						khứ.
+					</p>
+				</div>
+			</section>
+
+			<!-- pagination -->
+			<section class="pagination">
+				<a href="#">&laquo;</a>
+				<a class="active" href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">&raquo;</a>
+			</section>
+		</article>
+
+		<!-- main sidebar -->
+		<div class="main__sidebar">
+			<ul class="social-page__list">
+				<li class="social-page__item facebook-page">
+					<i class="fa-brands fa-facebook-f"></i>
+					<div class="social-page__item__content">
+						<p>LIKE OUR FACEBOOK</p>
+						<p>4,032,001 LIKES</p>
+					</div>
+					<i class="fa-regular fa-square-plus"></i>
 				</li>
-				<li class="header__navbar__item">
-					<a href="#home">HOME</a>
+
+				<li class="social-page__item twitter-page">
+					<i class="fa-brands fa-twitter"></i>
+					<div class="social-page__item__content">
+						<p>LIKE OUR TWITTER</p>
+						<p>3,294,213 LIKES</p>
+					</div>
+					<i class="fa-regular fa-square-plus"></i>
 				</li>
-				<li class="header__navbar__item">
-					<a class="header__navbar__item--active" href="./esport.html">ESPORT</a>
+
+				<li class="social-page__item youtube-page">
+					<i class="fa-brands fa-youtube"></i>
+					<div class="social-page__item__content">
+						<p>LIKE OUR YOUTUBE</p>
+						<p>2,953,314 LIKES</p>
+					</div>
+					<i class="fa-regular fa-square-plus"></i>
 				</li>
 			</ul>
-			<form class="header__search" method="get" action="">
-				<input
-					class="header__search__input"
-					type="text"
-					name="search"
-					placeholder=" Tìm kiếm"
-				/>
-				<button class="header__search__button" type="submit" title="search">
-					<!-- button decoration -->
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="29"
-						height="29"
-						viewBox="0 0 29 29"
-						fill="none"
-					>
-						<g clip-path="url(#clip0_2_17)">
-							<g filter="url(#filter0_d_2_17)">
-								<path
-									d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
-									stroke="white"
-									stroke-width="3"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									shape-rendering="crispEdges"
-								></path>
-							</g>
-						</g>
-						<defs>
-							<filter
-								id="filter0_d_2_17"
-								x="-0.418549"
-								y="3.70435"
-								width="29.7139"
-								height="29.7139"
-								filterUnits="userSpaceOnUse"
-								color-interpolation-filters="sRGB"
-							>
-								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feColorMatrix
-									in="SourceAlpha"
-									type="matrix"
-									values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-									result="hardAlpha"
-								/>
-								<feOffset dy="4"></feOffset>
-								<feGaussianBlur stdDeviation="2"></feGaussianBlur>
-								<feComposite in2="hardAlpha" operator="out" />
-								<feColorMatrix
-									type="matrix"
-									values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-								/>
-								<feBlend
-									mode="normal"
-									in2="BackgroundImageFix"
-									result="effect1_dropShadow_2_17"
-								/>
-								<feBlend
-									mode="normal"
-									in="SourceGraphic"
-									in2="effect1_dropShadow_2_17"
-									result="shape"
-								/>
-							</filter>
-							<clipPath id="clip0_2_17">
-								<rect
-									width="28.0702"
-									height="28.0702"
-									fill="white"
-									transform="translate(0.403503 0.526367)"
-								/>
-							</clipPath>
-						</defs>
-					</svg>
-					<!-- button decoration -->
-				</button>
-			</form>
-		</header>
 
-		<!-- Main -->
-		<main class="main">
-			<article class="main__article">
-				<!-- Slide show -->
-				<section class="slideshow__container">
-						<div class="mySlides fade">
-							<div class="numbertext">1 / 4</div>
-								<img src="./images/esport/img1.jpg">
-						</div>
-						<div class="mySlides fade">
-							<div class="numbertext">2 / 4</div>
-								<img src="./images/esport/img2.jpg">
-						</div>
-						<div class="mySlides fade">
-							<div class="numbertext">3 / 4</div>
-								<img src="./images/esport/img3.jpg">
-						</div>
-						<div class="mySlides fade">
-							<div class="numbertext">4 / 4</div>
-								<img src="./images/esport/img4.jpg">
-						</div>
+			<div class="recent-post">
+				<h1 class="recent-post__title">RECENT POST</h1>
 
-						<div style="text-align:center">
-							<span class="dot"></span> 
-							<span class="dot"></span> 
-							<span class="dot"></span> 
-							<span class="dot"></span> 
+				<hr style="margin: 0 auto 5px 0" />
+				<hr style="margin: 0 auto 30px 0" />
+
+				<ul class="recent-post__list">
+					<li class="recent-post__item">
+						<div class="recent-post__item__img">
+							<img src="./images/esport/img1.jpg" alt="" />
 						</div>
-				</section>
-				
-				<!-- News cards -->
-				<section class="card-grid__container">
-					<div class="card-grid__item">
-						<img class="card-grid__item__img" src="./images/esport/grid-card/img1.jpg" alt="">
-						<h3 class="card-grid__item__title">
-							Trực tiếp Liên Minh ASIAD 2023 hôm nay 29/9: LMHT Việt Nam ngẩng cao đầu rời cuộc chơi
-						</h3>
-						<span class="card-grid__item__date">
-							<i class="fa-regular fa-clock"></i>
-							28/9/2023
-						</span>
-						<span class="card-grid__item__love active">
-							<i class="fa-regular fa-heart not-loved"></i>
-							<i class="fa-solid fa-heart loved"></i>
-							99251
-						</span>
-						<p>Tuy không thể giành huy chương tại ASIAD 19, nhưng Việt Nam vẫn khiến người hâm mộ hài lòng với màn trình diễn của mình. Vươn lên với màn trình diễn thuyết phục, đồng thời khiến chủ nhà Trung Quốc toát mồ hôi trong ván đấu quyết định, đội tuyển LMHT Việt Nam đã kết thúc giải đấu với những ấn tượng khó phai.</p>
-					</div>
-					<div class="card-grid__item">
-						<img class="card-grid__item__img" src="./images/esport/grid-card/img2.jpg" alt="">
-						<h3 class="card-grid__item__title">
-							ASIAD 19: Cuộc đua tìm kiếm tấm huy chương vàng LMHT đã ngã ngũ, hướng đến một CKTG bùng nổ
-						</h3>
-						<span class="card-grid__item__date">
-							<i class="fa-regular fa-clock"></i>
-							28/9/2023
-						</span>
-						<span class="card-grid__item__love">
-							<i class="fa-regular fa-heart not-loved"></i>
-							<i class="fa-solid fa-heart loved"></i>
-							3251
-						</span>
-						<p>Tiếp đến trận Chung kết, không có gì bất ngờ khi Hàn Quốc thành công có được tấm HCV danh giá. Đại diện xứ kim chi kiểm soát hoàn toàn thế trận và không cho Đài Bắc Trung Hoa có bất cứ cơ hội phản công nào. Với tấm HCV danh giá này, các tuyển thủ LMHT Hàn Quốc đã chính thức được miễn NVQS theo quy định của Hàn Quốc. Các tuyển thủ này sẽ chỉ phải lao động công ích trong một thời gian ngắn và sẽ không ảnh hưởng đến thi đấu tại các giải đấu của Riot Games.</p>
-					</div>
-					<div class="card-grid__item">
-						<img class="card-grid__item__img" src="./images/esport/grid-card/img3.jpg" alt="">
-						<h3 class="card-grid__item__title">
-							CKTG 2023: Danh sách các đội giành vé tới CKTG tại Hàn Quốc vào tháng 10 năm nay
-						</h3>
-						<span class="card-grid__item__date">
-							<i class="fa-regular fa-clock"></i>
-							28/9/2023
-						</span>
-						<span class="card-grid__item__love">
-							<i class="fa-regular fa-heart not-loved"></i>
-							<i class="fa-solid fa-heart loved"></i>
-							3251
-						</span>
-						<p>Các giải đấu quốc nội LMHT đang dần kết thúc và tìm ra những cái tên xuất sắc nhất tiến đến CKTG 2023. Mùa giải 2023, Riot Games không chỉ đưa CKTG quay trở lại xứ Kim Chi mà còn mang đến một “luồng gió” mới với thể thức thi đấu hấp dẫn mới. CKTG 2023 sẽ được đồng tổ chức bởi Thành phố Seoul và Thành phố Busan vào tháng 10 tới đây.</p>
-					</div>
-					<div class="card-grid__item">
-						<img class="card-grid__item__img" src="./images/esport/grid-card/img4.jpg" alt="">
-						<h3 class="card-grid__item__title">
-							LMHT: Người hâm mộ BTS tranh cãi nảy lửa về việc Faker được miễn "nghĩa vụ quân sự"
-						</h3>
-						<span class="card-grid__item__date">
-							<i class="fa-regular fa-clock"></i>
-							28/9/2023
-						</span>
-						<span class="card-grid__item__love">
-							<i class="fa-regular fa-heart not-loved"></i>
-							<i class="fa-solid fa-heart loved"></i>
-							3251
-						</span>
-						<p>Esports tại Hàn Quốc từ lâu đã rất phát triển và được coi như một môn thể thao chính thống. Các tuyển thủ tại xứ Kim Chi cũng được công nhận như một VĐV Quốc Gia. Thậm chí tại Hàn Quốc còn có những trường học chuyên đào tạo tuyển thủ để hướng đến một môn thể thao phát triển. Bởi vậy, khi Esports được công nhận tại ASIAD 19 như một môn thể thao truyền thống, cạnh tranh huy chương, các tuyển thủ đã không bỏ lỡ cơ hội này để giành về tấm HCV.</p>
-					</div>
-					<div class="card-grid__item">
-						<img class="card-grid__item__img" src="./images/esport/grid-card/img5.jpg" alt="">
-						<h3 class="card-grid__item__title">
-							Riot Games thay đổi quy tắc đội hình cho mùa giải Valorant Champions Tour 2024
-						</h3>
-						<span class="card-grid__item__date">
-							<i class="fa-regular fa-clock"></i>
-							28/9/2023
-						</span>
-						<span class="card-grid__item__love">
-							<i class="fa-regular fa-heart not-loved"></i>
-							<i class="fa-solid fa-heart loved"></i>
-							3251
-						</span>
-						<p>Việc cho phép game thủ hai chiều là một trong những thay đổi lớn nhất đối với quy tắc xây dựng đội hình năm 2024. Những người chơi này đủ điều kiện để thi đấu cho đội VCT và cả đội phụ. Các đội VCT có thể có tối đa 2 người chơi hai chiều được chỉ định trong danh sách đầy đủ của họ. Đặc biệt, Riot cũng đang thiết lập một khoảng thời hạn 14 ngày gọi là "safe harbor" để khi những tuyển thủ rời khỏi các đội tuyển tham gia giải VCT có thể tìm được bến đỗ mới.</p>
-					</div>
-					<div class="card-grid__item">
-						<img class="card-grid__item__img" src="./images/esport/grid-card/img6.jpg" alt="">
-						<h3 class="card-grid__item__title">
-							Rò rỉ những hình ảnh đầu tiên của VALORANT Mobile, fan vỡ òa trong sung sướng
-						</h3>
-						<span class="card-grid__item__date">
-							<i class="fa-regular fa-clock"></i>
-							28/9/2023
-						</span>
-						<span class="card-grid__item__love">
-							<i class="fa-regular fa-heart not-loved"></i>
-							<i class="fa-solid fa-heart loved"></i>
-							3251
-						</span>
-						<p>Mang phong cách và trải nghiệm cá nhân tới đấu trường cạnh tranh toàn cầu. Sử dụng kỹ năng đấu súng cùng với lối tư duy chiến thuật sắc bén với hai phe tấn công và phòng thủ, thành bại được định đoạt chỉ trong 13 vòng đấu. Với chỉ 1 mạng mỗi vòng đấu, sự nhanh nhẹn và quyết đoán sẽ là yếu tố giúp bạn sống sót. Trải nghiệm VALORANT trong các chế độ chơi: Đấu Xếp Hạng, Đấu Thường, Sinh Tử và Spike Thần Tốc.</p>
-					</div>	
-					<div class="card-grid__item">
-						<img class="card-grid__item__img" src="./images/esport/grid-card/img7.jpg" alt="">
-						<h3 class="card-grid__item__title">
-							Trước thềm CKTG 2023, LPL bị chính khán giả nhà xếp hạng ngang với "khu vực wildcard"
-						</h3>
-						<span class="card-grid__item__date">
-							<i class="fa-regular fa-clock"></i>
-							28/9/2023
-						</span>
-						<span class="card-grid__item__love">
-							<i class="fa-regular fa-heart not-loved"></i>
-							<i class="fa-solid fa-heart loved"></i>
-							3251
-						</span>
-						<p>Những gì đã thể hiện tại ASIAD cho thấy có rất nhiều tuyển thủ của LPL hiện tại chưa thực sự sẵn sàng ở CKTG 2023. Nếu bỏ qua hai tuyển thủ đến từ Edward Gaming (đội không có suất dự CKTG 2023) thì những cái tên như Bin hay Elk khó lòng sánh được với Ruler, Zeus và trận đối đầu giữa họ đã chứng minh điều này. Có lẽ, chỉ mỗi Knight là thực sự vẫn giữ được phong độ cho các cuộc đối đầu LCK sắp tới ở Hàn Quốc</p>
-					</div>	
-					<div class="card-grid__item">
-						<img class="card-grid__item__img" src="./images/esport/grid-card/img8.jpg" alt="">
-						<h3 class="card-grid__item__title">
-							Vừa trở lại rank Hàn, Faker đã nhận "trái đắng", nhưng lại khiến cộng đồng LMHT vô cùng xúc động
-						</h3>
-						<span class="card-grid__item__date">
-							<i class="fa-regular fa-clock"></i>
-							28/9/2023
-						</span>
-						<span class="card-grid__item__love">
-							<i class="fa-regular fa-heart not-loved"></i>
-							<i class="fa-solid fa-heart loved"></i>
-							3251
-						</span>
-						<p>Như đã biết, vừa qua Faker đã cùng các đồng đội tại đội Liên Minh Huyền Thoại (LMHT) Việt Nam giành Huy chương Vàng ASIAD. Tuy nhiên, không thể ăn mừng được lâu, khi ngay sau giải đấu này, các tuyển thủ chỉ có một quãng thời gian nghỉ ngơi cực ngắn, trước khi bước vào Chung kết thế giới (CKTG) 2023. Giải đấu quốc tế lớn nhất của làng LMHT cũng quan trọng không kém với Faker và T1 khi họ đã "gục ngã trước cổng thiên đường" vào năm ngoái.</p>
-					</div>	
-					<div class="card-grid__item">
-						<img class="card-grid__item__img" src="./images/esport/grid-card/img9.jpg" alt="">
-						<h3 class="card-grid__item__title">
-							Truyền thông Hàn xếp hạng 20 tuyển thủ mạnh nhất CKTG 2023, Faker bất ngờ "bật bãi"
-						</h3>
-						<span class="card-grid__item__date">
-							<i class="fa-regular fa-clock"></i>
-							28/9/2023
-						</span>
-						<span class="card-grid__item__love">
-							<i class="fa-regular fa-heart not-loved"></i>
-							<i class="fa-solid fa-heart loved"></i>
-							3251
-						</span>
-						<p>Mới đây, truyền thông Hàn đã tung ra kết quả bình chọn Top 20 tuyển thủ được đánh giá là mạnh nhất sẽ góp mặt tại CKTG 2023. Theo đó, toàn bộ dàn sao của JDG và Gen.G đều góp mặt và Ruler là tuyển thủ xếp hạng nhất trong khi Chovy ở ngay sau với vị trí thứ hai. Điều này hoàn toàn hợp lý khi cả hai đều là linh hồn trong lối chơi của đội chủ quản. Chưa kể, Ruler đang có phong độ rất cao còn Chovy vừa có chức vô địch LCK thứ ba liên tiếp trong sự nghiệp.</p>
-					</div>	
-					<div class="card-grid__item">
-						<img class="card-grid__item__img" src="./images/esport/grid-card/img10.jpg" alt="">
-						<h3 class="card-grid__item__title">
-							BLV Hoàng Luân buông lời phũ phàng về thành tích ASIAD của LMHT Việt, fan ngẫm lại đúng vô cùng
-						</h3>
-						<span class="card-grid__item__date">
-							<i class="fa-regular fa-clock"></i>
-							28/9/2023
-						</span>
-						<span class="card-grid__item__love">
-							<i class="fa-regular fa-heart not-loved"></i>
-							<i class="fa-solid fa-heart loved"></i>
-							3251
-						</span>
-						<p>Đối với riêng BLV Hoàng Luân, anh thừa nhận bản thân không hài lòng với những gì mà các tuyển thủ LMHT Việt thể hiện ở Hàng Châu. Trong một buổi stream gần đây, nam BLV thẳng thắn đặt câu hỏi: "Tại sao các tuyển thủ Việt cứ phải để đến khi không còn bất kỳ mục tiêu nào tranh đấu thì mới chịu thể hiện một cách tốt nhất?". Theo nam BLV, điều này đã lặp đi lặp lại không ít lần trong quá khứ.</p>
-					</div>	
-				</section>
-
-				<!-- pagination -->
-				<section class="pagination">
-					<a href="#">&laquo;</a>
-					<a class="active" href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-					<a href="#">5</a>
-					<a href="#">6</a>
-					<a href="#">&raquo;</a>
-				  </section>
-
-			</article>
-
-			<!-- main sidebar -->
-			<div class="main__sidebar">
-				<ul class="social-page__list">
-					<li class="social-page__item facebook-page">
-						<i class="fa-brands fa-facebook-f"></i>
-						<div class="social-page__item__content">
-							<p>LIKE OUR FACEBOOK</p>
-							<p>4,032,001 LIKES</p>
+						<div class="recent-post__item__body">
+							<h5>ĐÃ CÓ LỊCH THI ĐẤU CHUNG KẾT THẾ GIỚI</h5>
+							<p>10-10-2023</p>
 						</div>
-						<i class="fa-regular fa-square-plus"></i>
 					</li>
-
-					<li class="social-page__item twitter-page">
-						<i class="fa-brands fa-twitter"></i>
-						<div class="social-page__item__content">
-							<p>LIKE OUR TWITTER</p>
-							<p>3,294,213 LIKES</p>
+					<li class="recent-post__item">
+						<div class="recent-post__item__img">
+							<img src="./images/esport/img2.jpg" alt="" />
 						</div>
-						<i class="fa-regular fa-square-plus"></i>
+						<div class="recent-post__item__body">
+							<h5>NƯỚC CHỦ NHÀ HÀN QUỐC ???</h5>
+							<p>10-10-2023</p>
+						</div>
 					</li>
-
-					<li class="social-page__item youtube-page">
-						<i class="fa-brands fa-youtube"></i>
-						<div class="social-page__item__content">
-							<p>LIKE OUR YOUTUBE</p>
-							<p>2,953,314 LIKES</p>
+					<li class="recent-post__item">
+						<div class="recent-post__item__img">
+							<img src="./images/esport/img3.jpg" alt="" />
 						</div>
-						<i class="fa-regular fa-square-plus"></i>
+						<div class="recent-post__item__body">
+							<h5>TÌNH TRẠNG CÁC ĐỘI TUYỂN</h5>
+							<p>10-10-2023</p>
+						</div>
+					</li>
+					<li class="recent-post__item">
+						<div class="recent-post__item__img">
+							<img src="./images/esport/img4.jpg" alt="" />
+						</div>
+						<div class="recent-post__item__body">
+							<h5>CẬP NHẬT PHIÊM BẢN 10.0</h5>
+							<p>10-10-2023</p>
+						</div>
+					</li>
+					<li class="recent-post__item">
+						<div class="recent-post__item__img">
+							<img src="./images/esport/img5.jpg" alt="" />
+						</div>
+						<div class="recent-post__item__body">
+							<h5>VCS ĐANG ĐƯỢC ĐÁNH GIÁ CAO TẠI ASIAD 19</h5>
+							<p>10-10-2023</p>
+						</div>
 					</li>
 				</ul>
+			</div>
+
+			<div class="playoffs">
+				<h1 class="playoffs__title">PLAYOFFS</h1>
+
+				<hr style="margin: 0 auto 5px 0" />
+				<hr style="margin: 0 auto 30px 0" />
+
+				<table class="playoffs__table">
+					<tr>
+						<th>No</th>
+						<th>Team</th>
+						<th>Win</th>
+						<th>Lose</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td class="playoffs__table_team-name">
+							<img src="./images/esport/team-logo/t1.jpg" alt="" />
+							<span>
+								T1
+							</span>
+						</td>
+						<td>9</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td class="playoffs__table_team-name">
+							<img src="./images/esport/team-logo/geng.jpg" alt="" />
+							<span>
+								GEN G
+							</span>
+						</td>
+						<td>8</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td class="playoffs__table_team-name">
+							<img src="./images/esport/team-logo/ssg.jpg" alt="" />
+							<span>
+								SSG
+							</span>
+						</td>
+						<td>8</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td class="playoffs__table_team-name">
+							<img src="./images/esport/team-logo/kt.jpg" alt="" />
+							<span>
+								KT
+							</span>
+						</td>
+						<td>8</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td class="playoffs__table_team-name">
+							<img src="./images/esport/team-logo/dk.jpg" alt="" />
+							<span>
+								DK
+							</span>
+						</td>
+						<td>8</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td class="playoffs__table_team-name">
+							<img src="./images/esport/team-logo/hle.jpg" alt="" />
+							<span>
+								HLE
+							</span>
+						</td>
+						<td>8</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td class="playoffs__table_team-name">
+							<img src="./images/esport/team-logo/drx.jpg" alt="" />
+							<span>
+								DRX
+							</span>
+						</td>
+						<td>8</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td class="playoffs__table_team-name">
+							<img src="./images/esport/team-logo/lsb.jpg" alt="" />
+							<span>
+								LSB
+							</span>
+						</td>
+						<td>8</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td class="playoffs__table_team-name">
+							<img src="./images/esport/team-logo/ns.jpg" alt="" />
+							<span>
+								NS
+							</span>
+						</td>
+						<td>8</td>
+						<td>2</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="next-match">
+				<h1>NEXT MATCH</h1>
+
+				<hr style="margin: 0 auto 5px 0" />
+				<hr style="margin: 0 auto 30px 0" />
 				
-				<div class="recent-post">
-					<h1 class="recent-post__title">RECENT POST</h1>
-
-					<hr style="margin: 0 auto 5px 0">
-					<hr style="margin: 0 auto 5px 0">
-
-					<ul class="recent-post__list">
-						<li class="recent-post__item">
-							<div class="recent-post__item__img">
-								<img src="./images/esport/img1.jpg" alt="">
-							</div>
-							<div class="recent-post__item__body">
-								<h4>ĐÃ CÓ LỊCH THI ĐẤU CHUNG KẾT THẾ GIỚI</h4>
-								<p>10-10-2023</p>
-							</div>			
-						</li>
-						<li class="recent-post__item">
-							<div class="recent-post__item__img">
-								<img src="./images/esport/img2.jpg" alt="">
-							</div>
-							<div class="recent-post__item__body">
-								<h4>NƯỚC CHỦ NHÀ HÀN QUỐC ???</h4>
-								<p>10-10-2023</p>
-							</div>			
-						</li>
-						<li class="recent-post__item">
-							<div class="recent-post__item__img">
-								<img src="./images/esport/img3.jpg" alt="">
-							</div>
-							<div class="recent-post__item__body">
-								<h4>TÌNH TRẠNG CÁC ĐỘI TUYỂN</h4>
-								<p>10-10-2023</p>
-							</div>			
-						</li>
-						<li class="recent-post__item">
-							<div class="recent-post__item__img">
-								<img src="./images/esport/img4.jpg" alt="">
-							</div>
-							<div class="recent-post__item__body">
-								<h4>CẬP NHẬT PHIÊM BẢN 10.0</h4>
-								<p>10-10-2023</p>
-							</div>			
-						</li>
-						<li class="recent-post__item">
-							<div class="recent-post__item__img">
-								<img src="./images/esport/img5.jpg" alt="">
-							</div>
-							<div class="recent-post__item__body">
-								<h4>VCS ĐANG ĐƯỢC ĐÁNH GIÁ CAO TẠI ASIAD 19</h4>
-								<p>10-10-2023</p>
-							</div>			
-						</li>
-					</ul>
-				</div>
-
-				<div class="playoffs">
-					<h1 class="playoffs__title">PLAYOFFS</h1>
-
-					<hr style="margin: 0 auto 5px 0;">
-					<hr style="margin: 0 auto 5px 0;">
-
-					<table class="playoffs__table">
-						<tr class="playoffs__table__row">
-						  <th class="playoffs__table__head">No</th>
-						  <th class="playoffs__table__head">Team</th>
-						  <th class="playoffs__table__head">Win</th>
-						  <th class="playoffs__table__head">Lose</th>
-						</tr>
-						<tr class="playoffs__table__row">
-						  <td class="playoffs__table__data">1</td>
-						  <td class="playoffs__table__data">
-							<img src="./images/esport/team-logo/geng.jpg" width="50px" height="50px" alt="">
-							T1</td>
-						  <td class="playoffs__table__data">9</td>
-						  <td class="playoffs__table__data">1</td>
-						</tr>
-						<tr class="playoffs__table__row">
-						  <td class="playoffs__table__data">2</td>
-						  <td class="playoffs__table__data">
-							<img src="./images/esport/team-logo/geng.jpg" width="50px" height="50px" alt="">
-							GEN G</td>
-						  <td class="playoffs__table__data">8</td>
-						  <td class="playoffs__table__data">2</td>
-						</tr>
-						<tr class="playoffs__table__row">
-						  <td class="playoffs__table__data">3</td>
-						  <td class="playoffs__table__data">
-							<img src="./images/esport/team-logo/geng.jpg" width="50px" height="50px" alt="">
-							SSG</td>
-						  <td class="playoffs__table__data">8</td>
-						  <td class="playoffs__table__data">2</td>
-						</tr>
-						<tr class="playoffs__table__row">
-						  <td class="playoffs__table__data">4</td>
-						  <td class="playoffs__table__data">
-							<img src="./images/esport/team-logo/geng.jpg" width="50px" height="50px" alt="">
-							KT</td>
-						  <td class="playoffs__table__data">8</td>
-						  <td class="playoffs__table__data">2</td>
-						</tr>
-						<tr class="playoffs__table__row">
-						  <td class="playoffs__table__data">5</td>
-						  <td class="playoffs__table__data">
-							<img src="./images/esport/team-logo/geng.jpg" width="50px" height="50px" alt="">
-							DK</td>
-						  <td class="playoffs__table__data">8</td>
-						  <td class="playoffs__table__data">2</td>
-						</tr>
-						<tr class="playoffs__table__row">
-						  <td class="playoffs__table__data">6</td>
-						  <td class="playoffs__table__data">
-							<img src="./images/esport/team-logo/geng.jpg" width="50px" height="50px" alt="">
-							HLE</td>
-						  <td class="playoffs__table__data">8</td>
-						  <td class="playoffs__table__data">2</td>
-						</tr>
-						<tr class="playoffs__table__row">
-						  <td class="playoffs__table__data">7</td>
-						  <td class="playoffs__table__data">
-							<img src="./images/esport/team-logo/geng.jpg" width="50px" height="50px" alt="">
-							DRX</td>
-						  <td class="playoffs__table__data">8</td>
-						  <td class="playoffs__table__data">2</td>
-						</tr>
-						<tr class="playoffs__table__row">
-						  <td class="playoffs__table__data">8</td>
-						  <td class="playoffs__table__data">
-							<img src="./images/esport/team-logo/geng.jpg" width="50px" height="50px" alt="">
-							LSB</td>
-						  <td class="playoffs__table__data">8</td>
-						  <td class="playoffs__table__data">2</td>
-						</tr>
-						<tr class="playoffs__table__row">
-						  <td class="playoffs__table__data">9</td>
-						  <td class="playoffs__table__data">
-							<img src="./images/esport/team-logo/geng.jpg" width="50px" height="50px" alt="">
-							NS</td>
-						  <td class="playoffs__table__data">8</td>
-						  <td class="playoffs__table__data">2</td>
-						</tr>
-					  </table>
-				</div>
-
-				<div class="next-match">
-					<h1>NEXT MATCH</h1>
-					<div class="next-match__board">
-						<h3>CHAMPIONSHIP QUARTER FINALS</h3>
-						<div class="display-date">
-							<span id="day">day</span>,
-							<span id="daynum">00</span>
-							<span id="month">month</span>
-							<span id="year">0000</span>
+				<div class="next-match__board">
+					<h3>CHAMPIONSHIP QUARTER FINALS</h3>
+					<div class="display-date">
+						<span id="day">day</span>,
+						<span id="daynum">00</span>
+						<span id="month">month</span>
+						<span id="year">0000</span>
+					</div>
+					<div class="next-match__board__fight">
+						<div class="next-match__board__fight__team-1">
+							<img src="./images/esport/team-logo/t1.jpg" alt="">
 						</div>
-						<div class="next-match__board__fight">
-							<div class="next-match__board__fight__team-1">Team 1 logo</div>
-							<div>VS</div>
-							<div class="next-match__board__fight__team-2">Team 2 logo</div>
+						<div>VS</div>
+						<div class="next-match__board__fight__team-2">
+							<img src="./images/esport/team-logo/kt.jpg" alt="">
 						</div>
 					</div>
 				</div>
-
-				<div class="subscribe">
-					<h3>Subscribe Now!</h3>
-					<p>Receive the latest news from the team:game new adquisitionsand professional match result.</p>
-					<form action="POST" action="/">
-  						<input type="email" id="email" name="email" placeholder="Your email address...">
-						<button>SEND</button>
-					</form>
-				</div>
-
 			</div>
-		</main>
 
-		<!-- Footer -->
-		<footer class="footer">
-			<!-- Grid column -->
-			<div>
-				<!-- Content -->
-				<h2>
-					<a href="">
-						<img src="./images/logo.png" width="80px" height="50px" alt="logo" /> 
-					</a>
-					<span class="ml-3">TripleL</span>
-				</h2>
+			<div class="subscribe">
+				<h3>Subscribe Now!</h3>
 				<p>
-					Chúng tôi luôn săn lùng những tin tức hot hòn họt, luôn cập nhật nhanh chóng và chính xác đến cho mọi người.
+					Receive the latest news from the team:game new adquisitionsand
+					professional match result.
 				</p>
-				<p>
-					Theo dõi chúng tôi:
-				</p>
-				<div class="social-link">
-					<a href="#">
-						<i class="fa-brands fa-facebook-f"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-google"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-linkedin"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-github"></i>
-					</a>
-				</div>
+				<form action="POST" action="/">
+					<input type="email" id="email" name="email" placeholder="Your email address..." />
+					<button>SEND</button>
+				</form>
 			</div>
-			<!-- Grid column -->
+		</div>
+	</main>
 
-			<!-- Grid column -->
-			<div>
-				<!-- Links -->
-				<h2>
-					<i class="fa-solid fa-hashtag mr-4" style="color: #4da8a4"></i>
-					Site
-				</h2>
-				<p>
-					<a href="#!"
-						>Sport: Football, Basketball, Badminton, Chess, ...</a
-					>
-				</p>
-				<p>
-					<a href="#!"
-						>Esport: LoL, Dota, Valorant, CSGO, ...</a
-					>
-				</p>
+	<!-- Footer -->
+	<footer class="footer">
+		<!-- Grid column -->
+		<div>
+			<!-- Content -->
+			<h2>
+				<a href="">
+					<img src="./images/logo.png" width="80px" height="50px" alt="logo" />
+				</a>
+				<span class="ml-3">TripleL</span>
+			</h2>
+			<p>
+				Chúng tôi luôn săn lùng những tin tức hot hòn họt, luôn cập nhật nhanh
+				chóng và chính xác đến cho mọi người.
+			</p>
+			<p>Theo dõi chúng tôi:</p>
+			<div class="social-link">
+				<a href="#">
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+				<a href="">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="">
+					<i class="fab fa-google"></i>
+				</a>
+				<a href="">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a href="">
+					<i class="fab fa-github"></i>
+				</a>
 			</div>
-			<!-- Grid column -->
+		</div>
+		<!-- Grid column -->
 
-			<!-- Grid column -->
-			<div>
-				<!-- Links -->
-				<h2>
-					<i class="fa-regular fa-address-card mr-4" style="color: #4da8a4"></i>
-					Contact
-				</h2>
-				<p>
-					<i class="fa-solid fa-location-dot mr-4" style="color: #4da8a4"></i
-					>CTU, CAN THO, VIETNAM
-				</p>
-				<hr class="mr-5" />
-				<p>
-					<i class="fa-solid fa-envelope mr-4" style="color: #4da8a4"></i
-					>tripleL@gmail.com
-				</p>
-				<hr class="mr-5" />
-				<p>
-					<i class="fa-solid fa-phone mr-4" style="color: #4da8a4"></i
-					>+ 01 234 567 88
-				</p>
-				<hr class="mr-5" />
-				<p>
-					<i class="fa-solid fa-phone mr-4" style="color: #4da8a4"></i
-					>+ 01 234 567 89
-				</p>
-				<hr class="mr-5" />
+		<!-- Grid column -->
+		<div>
+			<!-- Links -->
+			<h2>
+				<i class="fa-solid fa-hashtag mr-4" style="color: #4da8a4"></i>
+				Site
+			</h2>
+			<p>
+				<a href="#!">Sport: Football, Basketball, Badminton, Chess, ...</a>
+			</p>
+			<p>
+				<a href="#!">Esport: LoL, Dota, Valorant, CSGO, ...</a>
+			</p>
+		</div>
+		<!-- Grid column -->
+
+		<!-- Grid column -->
+		<div>
+			<!-- Links -->
+			<h2>
+				<i class="fa-regular fa-address-card mr-4" style="color: #4da8a4"></i>
+				Contact
+			</h2>
+			<p>
+				<i class="fa-solid fa-location-dot mr-4" style="color: #4da8a4"></i>CTU, CAN THO, VIETNAM
+			</p>
+			<hr class="mr-5" />
+			<p>
+				<i class="fa-solid fa-envelope mr-4" style="color: #4da8a4"></i>tripleL@gmail.com
+			</p>
+			<hr class="mr-5" />
+			<p>
+				<i class="fa-solid fa-phone mr-4" style="color: #4da8a4"></i>+ 01 234
+				567 88
+			</p>
+			<hr class="mr-5" />
+			<p>
+				<i class="fa-solid fa-phone mr-4" style="color: #4da8a4"></i>+ 01 234
+				567 89
+			</p>
+			<hr class="mr-5" />
+		</div>
+		<!-- Grid column -->
+
+		<!-- Grid column -->
+		<div class="post-gallery">
+			<!-- Links -->
+			<h2>
+				<i class="fa-regular fa-image mr-4" style="color: #4da8a4"></i>
+				Post gallery
+			</h2>
+
+			<div class="post-gallery__item mb-4">
+				<a href=""><img src="./images/home/img1.jpg" alt="anh1" /></a>
+				<a href=""><img src="./images/home/img2.jpg" alt="anh1" /></a>
+				<a href=""><img src="./images/home/img3.jpg" alt="anh1" /></a>
+				<a href=""><img src="./images/home/img4.jpg" alt="anh1" /></a>
+				<a href=""><img src="./images/home/img5.jpg" alt="anh1" /></a>
+				<a href=""><img src="./images/home/img6.jpg" alt="anh1" /></a>
+				<a href=""><img src="./images/home/img7.jpg" alt="anh1" /></a>
+				<a href=""><img src="./images/home/img8.jpg" alt="anh1" /></a>
 			</div>
-			<!-- Grid column -->
+		</div>
+		<!-- Grid column -->
+	</footer>
+	<!-- Footer -->
 
-			<!-- Grid column -->
-			<div class="post-gallery">
-				<!-- Links -->
-				<h2>
-					<i class="fa-regular fa-image mr-4" style="color: #4da8a4"></i>
-					Post gallery
-				</h2>
+	<!-- Slideshow animation -->
+	<script>
+		let slideIndex = 0;
+		showSlides();
 
-				<div class="post-gallery__item mb-4">
-					<a href=""
-						><img src="./images/home/img1.jpg" alt="anh1"
-					/></a>
-					<a href=""
-						><img src="./images/home/img2.jpg" alt="anh1"
-					/></a>
-					<a href=""
-						><img src="./images/home/img3.jpg" alt="anh1"
-					/></a>
-					<a href=""
-						><img src="./images/home/img4.jpg" alt="anh1"
-					/></a>
-					<a href=""
-						><img src="./images/home/img5.jpg" alt="anh1"
-					/></a>
-					<a href=""
-						><img src="./images/home/img6.jpg" alt="anh1"
-					/></a>
-					<a href=""
-						><img src="./images/home/img7.jpg" alt="anh1"
-					/></a>
-					<a href=""
-						><img src="./images/home/img8.jpg" alt="anh1"
-					/></a>
-
-				</div>
-			</div>
-			<!-- Grid column -->
-		</footer>
-		<!-- Footer -->
-
-
-		<!-- Slideshow animation -->
-		<script>
-			let slideIndex = 0;
-			showSlides();
-			
-			function showSlides() {
+		function showSlides() {
 			let i;
 			let slides = document.getElementsByClassName("mySlides");
 			let dots = document.getElementsByClassName("dot");
 			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";  
+				slides[i].style.display = "none";
 			}
 			slideIndex++;
-			if (slideIndex > slides.length) {slideIndex = 1}    
+			if (slideIndex > slides.length) {
+				slideIndex = 1;
+			}
 			for (i = 0; i < dots.length; i++) {
 				dots[i].className = dots[i].className.replace(" active", "");
 			}
-			slides[slideIndex-1].style.display = "block";  
-			dots[slideIndex-1].className += " active";
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
 			setTimeout(showSlides, 3000);
-			}
-		</script>
+		}
+	</script>
 
+	<!-- Click Heart icon in news card  -->
+	<script>
+		loveIcons = document.getElementsByClassName("card-grid__item__love");
+		Array.from(loveIcons).forEach((loveIcon) => {
+			loveIcon.onclick = () => {
+				if (loveIcon.classList.contains("active"))
+					loveIcon.classList.remove("active");
+				else loveIcon.classList.add("active");
+			};
+		});
+	</script>
 
-
-		<!-- Click Heart icon in news card  -->
-		<script>
-			loveIcons = document.getElementsByClassName('card-grid__item__love')
-			Array.from(loveIcons).forEach(loveIcon => {
-				loveIcon.onclick = () => {
-					if (loveIcon.classList.contains("active")) loveIcon.classList.remove("active")
-					else loveIcon.classList.add("active")
-				}
-			});
-		</script>
-
-
-		<!-- Current Day javascript -->
-		<script>
-			function updateDate() {
+	<!-- Current Day javascript -->
+	<script>
+		function updateDate() {
 			let today = new Date();
 
 			let dayName = today.getDay(),
@@ -737,12 +789,13 @@
 			// return value array with number as a index
 			const val = [dayWeek[dayName], dayNum, months[month], year];
 			for (let i = 0; i < IDCollection.length; i++) {
-				document.getElementById(IDCollection[i]).firstChild.nodeValue = val[i];
+				document.getElementById(IDCollection[i]).firstChild.nodeValue =
+					val[i];
 			}
-			}
+		}
 
-			updateDate();
-		</script>
+		updateDate();
+	</script>
+</body>
 
-	</body>
 </html>
