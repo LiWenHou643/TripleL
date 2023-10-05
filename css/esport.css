@@ -1,6 +1,10 @@
+body {
+  background: rgb(84,0,0);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0), rgb(41, 8, 8), rgba(0, 0, 0, 0.8));;
+}
 .main {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 5fr 2fr;
   grid-template-areas: 'article sidebar';
   grid-template-rows: auto;
   margin: 0 100px;
@@ -82,7 +86,7 @@
 
 .main__article .card-grid__container .card-grid__item .card-grid__item__img {
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 
 .main__article .card-grid__container .card-grid__item .card-grid__item__img img{
@@ -93,6 +97,8 @@
 
 .main__article .card-grid__container .card-grid__item .card-grid__item__title {
   color: #d67f2d;
+  height: 60px;
+
 }
 
 .main__article .card-grid__container .card-grid__item .card-grid__item__date{
@@ -122,6 +128,33 @@
   margin: 10px 0;
 }
 
+/* Pagination*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Pagination links */
+.pagination a {
+  color: #fff;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: rgb(0, 87, 173);
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {
+  background-color: #c43434;
+}
+
 
 /* Side Bar */
 .main__sidebar {
@@ -142,7 +175,6 @@
 
 .main__sidebar .social-page__list .social-page__item .social-page__item__content{
   flex: 7;
-  padding: 0 10px;
   font-weight: 600;
 }
 
@@ -262,22 +294,26 @@
 
 /* subscribe */
 .main__sidebar .subscribe {
-  background-color: #96ff93;
+  background-color: #008cff;
   color: #000;
   padding: 20px;
 }
 
+.main__sidebar .subscribe p {
+  margin: 10px 0;
+}
+
 .main__sidebar .subscribe input {
   border: none;
+  width: 90%;
   padding: 10px;
-  width: 60%;
 }
 
 .main__sidebar .subscribe button {
-  background-color: #30d6ff;
+  background-color: #fcff30;
   border: none;
-  padding: 20px;
-  margin-left: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
 }
 
 .main__sidebar .subscribe button:hover {

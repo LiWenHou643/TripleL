@@ -122,7 +122,6 @@ footer {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
-	background-color: #1a1a1a;
 	color: #A0A0A0;
 	padding: 30px 50px;
 	border-top: 1px rgba(255, 0, 0, 0.5) solid;
@@ -136,12 +135,17 @@ footer h2 {
 	align-items: center;
 }
 
+footer p {
+	margin: 0;
+}
+
 footer .social-link {
 	width: 85%;
 	color: #298952;
 	display: flex;
 	justify-content: space-between;
 	font-size: 28px;
+	margin-top: 10px;
 }
 
 
