@@ -1,7 +1,6 @@
 body {
-  background: rgb(49, 0, 0);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(66, 0, 0), rgb(34, 8, 8), rgba(75, 0, 0, 0.8));
-  }
+  background: rgb(0, 0, 0);
+}
 
 .main {
   display: grid;
@@ -89,38 +88,37 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-column-gap: 10px;
+  grid-column-gap: 20px;
   grid-row-gap: 40px;
 }
 
+.main__article .card-grid__container .card-grid__item {
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
+
 .main__article .card-grid__container .card-grid__item .card-grid__item__background {
-  position: absolute;
-  top: 5px;
-  left: 0;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-  border-radius: 20px;
   transition: all .3s;
 }
-/* .main__article .card-grid__container .card-grid__item:hover .card-grid__item__background{
-  box-shadow: 0px 0px 30px 1px rgba(4, 160, 11, 0.9);
-} */
 
-.main__article .card-grid__container .card-grid__item{
-  overflow: visible;
-  position: relative;
-  z-index: 1;
-}
 .main__article .card-grid__container .card-grid__item .card-grid__item__foreground{
-  padding: 3px;
+  box-sizing: border-box;
+  width: 100%;
   height: 100%;
+  padding: 10px 5px;
   overflow: visible;
-  border-radius: 1rem;
-  background-color: #080808;
+  background-color: #141212;
   transition: all ease-in .2s;
   position: relative;
   z-index: 1;
+}
+
+.main__article .card-grid__container .card-grid__item:hover .card-grid__item__background {
+  border-radius: 20px;
 }
 
 .main__article .card-grid__container .card-grid__item:hover .card-grid__item__foreground {
@@ -131,7 +129,10 @@ body {
 
 .main__article .card-grid__container .card-grid__item .card-grid__item__img {
   width: 100%;
-  height: 300px;
+  height: 250px;
+}
+
+.main__article .card-grid__container .card-grid__item:hover .card-grid__item__img {
   border-radius: 1rem 1rem 0 0;
 }
 
@@ -144,7 +145,6 @@ body {
 .main__article .card-grid__container .card-grid__item .card-grid__item__title {
   color: #d67f2d;
   height: 60px;
-
 }
 
 .main__article .card-grid__container .card-grid__item .card-grid__item__date {
@@ -177,8 +177,32 @@ body {
 .main__article .card-grid__container .card-grid__item p {
   color: #ffffff;
   margin: 10px 0;
+  height: 70px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 10px 0;
 }
 
+.main__article .card-grid__container .card-grid__item .card-grid__item__details {
+  width: 50%;
+  height: 50px;
+  color: #000;
+  background: linear-gradient(270deg, #ffabab, #3fc2ff, #ff6ecf);
+  background-size: 800% 800%;
+  transition: .3s;
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+.main__article .card-grid__container .card-grid__item .card-grid__item__details:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  background-size: 800% 800%;
+  animation: infinite-color 2s ease infinite;
+} 
 /* Pagination*/
 .pagination {
   display: flex;
@@ -238,25 +262,21 @@ body {
 .main__sidebar .social-page__list .social-page__item.facebook-page {
   background: linear-gradient(270deg, #ce68d9, #dbc045, #539dff);
   background-size: 800% 800%;
-
 }
 
 .main__sidebar .social-page__list .social-page__item.twitter-page {
   background: linear-gradient(270deg, #68d1d9, #ff963f, #fffc60);
   background-size: 800% 800%;
-
 }
 
 .main__sidebar .social-page__list .social-page__item.youtube-page {
   background: linear-gradient(270deg, #ff8800, #8fbace, #ff5151);
   background-size: 800% 800%;
-
 }
 
 .main__sidebar .social-page__list .social-page__item.tiktok-page {
   background: linear-gradient(270deg, #ffabab, #3fc2ff, #ffffff);
   background-size: 800% 800%;
-
 }
 
 .main__sidebar .social-page__list .social-page__item.facebook-page:hover,
@@ -310,7 +330,7 @@ body {
 .main__sidebar .recent-post .recent-post__list .recent-post__item {
   width: 100%;
   height: 100px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0), rgb(33, 142, 185), rgba(255, 0, 0, 0.603));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0), rgb(0, 79, 110), rgba(255, 0, 0, 0.603));
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -320,6 +340,7 @@ body {
 
 .main__sidebar .recent-post .recent-post__list .recent-post__item:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .main__sidebar .recent-post .recent-post__list .recent-post__item .recent-post__item__img {
@@ -380,7 +401,7 @@ p {
 }
 
 .main__sidebar .next-match .next-match__board {
-  background-color: #3000b4;
+  background-color: #730077;
   padding: 20px;
   text-align: center;
 }
