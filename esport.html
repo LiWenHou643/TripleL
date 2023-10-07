@@ -1,4 +1,4 @@
-<!-- Người thiết kế Home Page: Lê Nhật Bằng B2103489 -->
+<!-- Người thiết kế Home Page: Lê Văn Hậu B2111797 -->
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -77,280 +77,350 @@
 		<article class="main__article">
 			<!-- Slide show -->
 			<section class="slideshow__container">
-				<div class="mySlides fade">
-					<div class="numbertext">1 / 4</div>
+				<div class="slideshow__item fade">
+					<div class="slideshow__item__numbertext">1 / 4</div>
 					<img src="./images/esport/img1.jpg" />
 				</div>
-				<div class="mySlides fade">
-					<div class="numbertext">2 / 4</div>
+				<div class="slideshow__item fade">
+					<div class="slideshow__item__numbertext">2 / 4</div>
 					<img src="./images/esport/img2.jpg" />
 				</div>
-				<div class="mySlides fade">
-					<div class="numbertext">3 / 4</div>
+				<div class="slideshow__item fade">
+					<div class="slideshow__item__numbertext">3 / 4</div>
 					<img src="./images/esport/img3.jpg" />
 				</div>
-				<div class="mySlides fade">
-					<div class="numbertext">4 / 4</div>
+				<div class="slideshow__item fade">
+					<div class="slideshow__item__numbertext">4 / 4</div>
 					<img src="./images/esport/img4.jpg" />
 				</div>
 
 				<div style="text-align: center">
-					<span class="dot"></span>
-					<span class="dot"></span>
-					<span class="dot"></span>
-					<span class="dot"></span>
+					<span class="slideshow__dot"></span>
+					<span class="slideshow__dot"></span>
+					<span class="slideshow__dot"></span>
+					<span class="slideshow__dot"></span>
 				</div>
 			</section>
 
 			<!-- News cards -->
 			<section class="card-grid__container">
 				<div class="card-grid__item">
-					<img class="card-grid__item__img" src="./images/esport/grid-card/img1.jpg" alt="" />
-					<h3 class="card-grid__item__title">
-						Trực tiếp Liên Minh ASIAD 2023 hôm nay 29/9: LMHT Việt Nam ngẩng
-						cao đầu rời cuộc chơi
-					</h3>
-					<span class="card-grid__item__date">
-						<i class="fa-regular fa-clock"></i>
-						28/9/2023
-					</span>
-					<span class="card-grid__item__love active">
-						<i class="fa-regular fa-heart not-loved"></i>
-						<i class="fa-solid fa-heart loved"></i>
-						99251
-					</span>
-					<p>
-						Tuy không thể giành huy chương tại ASIAD 19, nhưng Việt Nam vẫn
-						khiến người hâm mộ hài lòng với màn trình diễn của mình. Vươn lên
-						với màn trình diễn thuyết phục, đồng thời khiến chủ nhà Trung Quốc
-						toát mồ hôi trong ván đấu quyết định, đội tuyển LMHT Việt Nam đã
-						kết thúc giải đấu với những ấn tượng khó phai.
-					</p>
+
+					<!-- lớp nền để tạo hiệu ứng hover -->
+					<div class="card-grid__item__background"></div>
+
+					<!-- lớp chính chứa nội dung của card -->
+					<div class="card-grid__item__foreground">
+						<img class="card-grid__item__img" src="./images/esport/grid-card/img1.jpg" alt="" />
+						<h3 class="card-grid__item__title">
+							Trực tiếp Liên Minh ASIAD 2023 hôm nay 29/9: LMHT Việt Nam ngẩng
+							cao đầu rời cuộc chơi
+						</h3>
+						<span class="card-grid__item__date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="card-grid__item__love active">
+							<i class="fa-regular fa-heart not-loved"></i>
+							<i class="fa-solid fa-heart loved"></i>
+							99251
+						</span>
+						<p>
+							Tuy không thể giành huy chương tại ASIAD 19, nhưng Việt Nam vẫn
+							khiến người hâm mộ hài lòng với màn trình diễn của mình. Vươn lên
+							với màn trình diễn thuyết phục, đồng thời khiến chủ nhà Trung Quốc
+							toát mồ hôi trong ván đấu quyết định, đội tuyển LMHT Việt Nam đã
+							kết thúc giải đấu với những ấn tượng khó phai.
+						</p>
+					</div>
 				</div>
 				<div class="card-grid__item">
-					<img class="card-grid__item__img" src="./images/esport/grid-card/img2.jpg" alt="" />
-					<h3 class="card-grid__item__title">
-						ASIAD 19: Cuộc đua tìm kiếm tấm huy chương vàng LMHT đã ngã ngũ,
-						hướng đến một CKTG bùng nổ
-					</h3>
-					<span class="card-grid__item__date">
-						<i class="fa-regular fa-clock"></i>
-						28/9/2023
-					</span>
-					<span class="card-grid__item__love">
-						<i class="fa-regular fa-heart not-loved"></i>
-						<i class="fa-solid fa-heart loved"></i>
-						3251
-					</span>
-					<p>
-						Tiếp đến trận Chung kết, không có gì bất ngờ khi Hàn Quốc thành
-						công có được tấm HCV danh giá. Đại diện xứ kim chi kiểm soát hoàn
-						toàn thế trận và không cho Đài Bắc Trung Hoa có bất cứ cơ hội phản
-						công nào. Với tấm HCV danh giá này, các tuyển thủ LMHT Hàn Quốc đã
-						chính thức được miễn NVQS theo quy định của Hàn Quốc. Các tuyển
-						thủ này sẽ chỉ phải lao động công ích trong một thời gian ngắn và
-						sẽ không ảnh hưởng đến thi đấu tại các giải đấu của Riot Games.
-					</p>
+
+					<!-- lớp nền để tạo hiệu ứng hover -->
+					<div class="card-grid__item__background"></div>
+
+					<!-- lớp chính chứa nội dung của card -->
+					<div class="card-grid__item__foreground">
+						<img class="card-grid__item__img" src="./images/esport/grid-card/img2.jpg" alt="" />
+						<h3 class="card-grid__item__title">
+							ASIAD 19: Cuộc đua tìm kiếm tấm huy chương vàng LMHT đã ngã ngũ,
+							hướng đến một CKTG bùng nổ
+						</h3>
+						<span class="card-grid__item__date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="card-grid__item__love">
+							<i class="fa-regular fa-heart not-loved"></i>
+							<i class="fa-solid fa-heart loved"></i>
+							3251
+						</span>
+						<p>
+							Tiếp đến trận Chung kết, không có gì bất ngờ khi Hàn Quốc thành
+							công có được tấm HCV danh giá. Đại diện xứ kim chi kiểm soát hoàn
+							toàn thế trận và không cho Đài Bắc Trung Hoa có bất cứ cơ hội phản
+							công nào. Với tấm HCV danh giá này, các tuyển thủ LMHT Hàn Quốc đã
+							chính thức được miễn NVQS theo quy định của Hàn Quốc. Các tuyển
+							thủ này sẽ chỉ phải lao động công ích trong một thời gian ngắn và
+							sẽ không ảnh hưởng đến thi đấu tại các giải đấu của Riot Games.
+						</p>
+					</div>
 				</div>
 				<div class="card-grid__item">
-					<img class="card-grid__item__img" src="./images/esport/grid-card/img3.jpg" alt="" />
-					<h3 class="card-grid__item__title">
-						CKTG 2023: Danh sách các đội giành vé tới CKTG tại Hàn Quốc vào
-						tháng 10 năm nay
-					</h3>
-					<span class="card-grid__item__date">
-						<i class="fa-regular fa-clock"></i>
-						28/9/2023
-					</span>
-					<span class="card-grid__item__love">
-						<i class="fa-regular fa-heart not-loved"></i>
-						<i class="fa-solid fa-heart loved"></i>
-						3251
-					</span>
-					<p>
-						Các giải đấu quốc nội LMHT đang dần kết thúc và tìm ra những cái
-						tên xuất sắc nhất tiến đến CKTG 2023. Mùa giải 2023, Riot Games
-						không chỉ đưa CKTG quay trở lại xứ Kim Chi mà còn mang đến một
-						“luồng gió” mới với thể thức thi đấu hấp dẫn mới. CKTG 2023 sẽ
-						được đồng tổ chức bởi Thành phố Seoul và Thành phố Busan vào tháng
-						10 tới đây.
-					</p>
+
+					<!-- lớp nền để tạo hiệu ứng hover -->
+					<div class="card-grid__item__background"></div>
+
+					<!-- lớp chính chứa nội dung của card -->
+					<div class="card-grid__item__foreground">
+						<img class="card-grid__item__img" src="./images/esport/grid-card/img3.jpg" alt="" />
+						<h3 class="card-grid__item__title">
+							CKTG 2023: Danh sách các đội giành vé tới CKTG tại Hàn Quốc vào
+							tháng 10 năm nay
+						</h3>
+						<span class="card-grid__item__date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="card-grid__item__love">
+							<i class="fa-regular fa-heart not-loved"></i>
+							<i class="fa-solid fa-heart loved"></i>
+							3251
+						</span>
+						<p>
+							Các giải đấu quốc nội LMHT đang dần kết thúc và tìm ra những cái
+							tên xuất sắc nhất tiến đến CKTG 2023. Mùa giải 2023, Riot Games
+							không chỉ đưa CKTG quay trở lại xứ Kim Chi mà còn mang đến một
+							“luồng gió” mới với thể thức thi đấu hấp dẫn mới. CKTG 2023 sẽ
+							được đồng tổ chức bởi Thành phố Seoul và Thành phố Busan vào tháng
+							10 tới đây.
+						</p>
+					</div>
 				</div>
 				<div class="card-grid__item">
-					<img class="card-grid__item__img" src="./images/esport/grid-card/img4.jpg" alt="" />
-					<h3 class="card-grid__item__title">
-						LMHT: Người hâm mộ BTS tranh cãi nảy lửa về việc Faker được miễn
-						"nghĩa vụ quân sự"
-					</h3>
-					<span class="card-grid__item__date">
-						<i class="fa-regular fa-clock"></i>
-						28/9/2023
-					</span>
-					<span class="card-grid__item__love">
-						<i class="fa-regular fa-heart not-loved"></i>
-						<i class="fa-solid fa-heart loved"></i>
-						3251
-					</span>
-					<p>
-						Esports tại Hàn Quốc từ lâu đã rất phát triển và được coi như một
-						môn thể thao chính thống. Các tuyển thủ tại xứ Kim Chi cũng được
-						công nhận như một VĐV Quốc Gia. Thậm chí tại Hàn Quốc còn có những
-						trường học chuyên đào tạo tuyển thủ để hướng đến một môn thể thao
-						phát triển. Bởi vậy, khi Esports được công nhận tại ASIAD 19 như
-						một môn thể thao truyền thống, cạnh tranh huy chương, các tuyển
-						thủ đã không bỏ lỡ cơ hội này để giành về tấm HCV.
-					</p>
+
+					<!-- lớp nền để tạo hiệu ứng hover -->
+					<div class="card-grid__item__background"></div>
+
+					<!-- lớp chính chứa nội dung của card -->
+					<div class="card-grid__item__foreground">
+						<img class="card-grid__item__img" src="./images/esport/grid-card/img4.jpg" alt="" />
+						<h3 class="card-grid__item__title">
+							LMHT: Người hâm mộ BTS tranh cãi nảy lửa về việc Faker được miễn
+							"nghĩa vụ quân sự"
+						</h3>
+						<span class="card-grid__item__date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="card-grid__item__love">
+							<i class="fa-regular fa-heart not-loved"></i>
+							<i class="fa-solid fa-heart loved"></i>
+							3251
+						</span>
+						<p>
+							Esports tại Hàn Quốc từ lâu đã rất phát triển và được coi như một
+							môn thể thao chính thống. Các tuyển thủ tại xứ Kim Chi cũng được
+							công nhận như một VĐV Quốc Gia. Thậm chí tại Hàn Quốc còn có những
+							trường học chuyên đào tạo tuyển thủ để hướng đến một môn thể thao
+							phát triển. Bởi vậy, khi Esports được công nhận tại ASIAD 19 như
+							một môn thể thao truyền thống, cạnh tranh huy chương, các tuyển
+							thủ đã không bỏ lỡ cơ hội này để giành về tấm HCV.
+						</p>
+					</div>
 				</div>
 				<div class="card-grid__item">
-					<img class="card-grid__item__img" src="./images/esport/grid-card/img5.jpg" alt="" />
-					<h3 class="card-grid__item__title">
-						Riot Games thay đổi quy tắc đội hình cho mùa giải Valorant
-						Champions Tour 2024
-					</h3>
-					<span class="card-grid__item__date">
-						<i class="fa-regular fa-clock"></i>
-						28/9/2023
-					</span>
-					<span class="card-grid__item__love">
-						<i class="fa-regular fa-heart not-loved"></i>
-						<i class="fa-solid fa-heart loved"></i>
-						3251
-					</span>
-					<p>
-						Việc cho phép game thủ hai chiều là một trong những thay đổi lớn
-						nhất đối với quy tắc xây dựng đội hình năm 2024. Những người chơi
-						này đủ điều kiện để thi đấu cho đội VCT và cả đội phụ. Các đội VCT
-						có thể có tối đa 2 người chơi hai chiều được chỉ định trong danh
-						sách đầy đủ của họ. Đặc biệt, Riot cũng đang thiết lập một khoảng
-						thời hạn 14 ngày gọi là "safe harbor" để khi những tuyển thủ rời
-						khỏi các đội tuyển tham gia giải VCT có thể tìm được bến đỗ mới.
-					</p>
+
+					<!-- lớp nền để tạo hiệu ứng hover -->
+					<div class="card-grid__item__background"></div>
+
+					<!-- lớp chính chứa nội dung của card -->
+					<div class="card-grid__item__foreground">
+						<img class="card-grid__item__img" src="./images/esport/grid-card/img5.jpg" alt="" />
+						<h3 class="card-grid__item__title">
+							Riot Games thay đổi quy tắc đội hình cho mùa giải Valorant
+							Champions Tour 2024
+						</h3>
+						<span class="card-grid__item__date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="card-grid__item__love">
+							<i class="fa-regular fa-heart not-loved"></i>
+							<i class="fa-solid fa-heart loved"></i>
+							3251
+						</span>
+						<p>
+							Việc cho phép game thủ hai chiều là một trong những thay đổi lớn
+							nhất đối với quy tắc xây dựng đội hình năm 2024. Những người chơi
+							này đủ điều kiện để thi đấu cho đội VCT và cả đội phụ. Các đội VCT
+							có thể có tối đa 2 người chơi hai chiều được chỉ định trong danh
+							sách đầy đủ của họ. Đặc biệt, Riot cũng đang thiết lập một khoảng
+							thời hạn 14 ngày gọi là "safe harbor" để khi những tuyển thủ rời
+							khỏi các đội tuyển tham gia giải VCT có thể tìm được bến đỗ mới.
+						</p>
+					</div>
 				</div>
 				<div class="card-grid__item">
-					<img class="card-grid__item__img" src="./images/esport/grid-card/img6.jpg" alt="" />
-					<h3 class="card-grid__item__title">
-						Rò rỉ những hình ảnh đầu tiên của VALORANT Mobile, fan vỡ òa trong
-						sung sướng
-					</h3>
-					<span class="card-grid__item__date">
-						<i class="fa-regular fa-clock"></i>
-						28/9/2023
-					</span>
-					<span class="card-grid__item__love">
-						<i class="fa-regular fa-heart not-loved"></i>
-						<i class="fa-solid fa-heart loved"></i>
-						3251
-					</span>
-					<p>
-						Mang phong cách và trải nghiệm cá nhân tới đấu trường cạnh tranh
-						toàn cầu. Sử dụng kỹ năng đấu súng cùng với lối tư duy chiến thuật
-						sắc bén với hai phe tấn công và phòng thủ, thành bại được định
-						đoạt chỉ trong 13 vòng đấu. Với chỉ 1 mạng mỗi vòng đấu, sự nhanh
-						nhẹn và quyết đoán sẽ là yếu tố giúp bạn sống sót. Trải nghiệm
-						VALORANT trong các chế độ chơi: Đấu Xếp Hạng, Đấu Thường, Sinh Tử
-						và Spike Thần Tốc.
-					</p>
+
+					<!-- lớp nền để tạo hiệu ứng hover -->
+					<div class="card-grid__item__background"></div>
+
+					<!-- lớp chính chứa nội dung của card -->
+					<div class="card-grid__item__foreground">
+						<img class="card-grid__item__img" src="./images/esport/grid-card/img6.jpg" alt="" />
+						<h3 class="card-grid__item__title">
+							Rò rỉ những hình ảnh đầu tiên của VALORANT Mobile, fan vỡ òa trong
+							sung sướng
+						</h3>
+						<span class="card-grid__item__date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="card-grid__item__love">
+							<i class="fa-regular fa-heart not-loved"></i>
+							<i class="fa-solid fa-heart loved"></i>
+							3251
+						</span>
+						<p>
+							Mang phong cách và trải nghiệm cá nhân tới đấu trường cạnh tranh
+							toàn cầu. Sử dụng kỹ năng đấu súng cùng với lối tư duy chiến thuật
+							sắc bén với hai phe tấn công và phòng thủ, thành bại được định
+							đoạt chỉ trong 13 vòng đấu. Với chỉ 1 mạng mỗi vòng đấu, sự nhanh
+							nhẹn và quyết đoán sẽ là yếu tố giúp bạn sống sót. Trải nghiệm
+							VALORANT trong các chế độ chơi: Đấu Xếp Hạng, Đấu Thường, Sinh Tử
+							và Spike Thần Tốc.
+						</p>
+					</div>
 				</div>
 				<div class="card-grid__item">
-					<img class="card-grid__item__img" src="./images/esport/grid-card/img7.jpg" alt="" />
-					<h3 class="card-grid__item__title">
-						Trước thềm CKTG 2023, LPL bị chính khán giả nhà xếp hạng ngang với
-						"khu vực wildcard"
-					</h3>
-					<span class="card-grid__item__date">
-						<i class="fa-regular fa-clock"></i>
-						28/9/2023
-					</span>
-					<span class="card-grid__item__love">
-						<i class="fa-regular fa-heart not-loved"></i>
-						<i class="fa-solid fa-heart loved"></i>
-						3251
-					</span>
-					<p>
-						Những gì đã thể hiện tại ASIAD cho thấy có rất nhiều tuyển thủ của
-						LPL hiện tại chưa thực sự sẵn sàng ở CKTG 2023. Nếu bỏ qua hai
-						tuyển thủ đến từ Edward Gaming (đội không có suất dự CKTG 2023)
-						thì những cái tên như Bin hay Elk khó lòng sánh được với Ruler,
-						Zeus và trận đối đầu giữa họ đã chứng minh điều này. Có lẽ, chỉ
-						mỗi Knight là thực sự vẫn giữ được phong độ cho các cuộc đối đầu
-						LCK sắp tới ở Hàn Quốc
-					</p>
+
+					<!-- lớp nền để tạo hiệu ứng hover -->
+					<div class="card-grid__item__background"></div>
+
+					<!-- lớp chính chứa nội dung của card -->
+					<div class="card-grid__item__foreground">
+						<img class="card-grid__item__img" src="./images/esport/grid-card/img7.jpg" alt="" />
+						<h3 class="card-grid__item__title">
+							Trước thềm CKTG 2023, LPL bị chính khán giả nhà xếp hạng ngang với
+							"khu vực wildcard"
+						</h3>
+						<span class="card-grid__item__date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="card-grid__item__love">
+							<i class="fa-regular fa-heart not-loved"></i>
+							<i class="fa-solid fa-heart loved"></i>
+							3251
+						</span>
+						<p>
+							Những gì đã thể hiện tại ASIAD cho thấy có rất nhiều tuyển thủ của
+							LPL hiện tại chưa thực sự sẵn sàng ở CKTG 2023. Nếu bỏ qua hai
+							tuyển thủ đến từ Edward Gaming (đội không có suất dự CKTG 2023)
+							thì những cái tên như Bin hay Elk khó lòng sánh được với Ruler,
+							Zeus và trận đối đầu giữa họ đã chứng minh điều này. Có lẽ, chỉ
+							mỗi Knight là thực sự vẫn giữ được phong độ cho các cuộc đối đầu
+							LCK sắp tới ở Hàn Quốc
+						</p>
+					</div>
 				</div>
 				<div class="card-grid__item">
-					<img class="card-grid__item__img" src="./images/esport/grid-card/img8.jpg" alt="" />
-					<h3 class="card-grid__item__title">
-						Vừa trở lại rank Hàn, Faker đã nhận "trái đắng", nhưng lại khiến
-						cộng đồng LMHT vô cùng xúc động
-					</h3>
-					<span class="card-grid__item__date">
-						<i class="fa-regular fa-clock"></i>
-						28/9/2023
-					</span>
-					<span class="card-grid__item__love">
-						<i class="fa-regular fa-heart not-loved"></i>
-						<i class="fa-solid fa-heart loved"></i>
-						3251
-					</span>
-					<p>
-						Như đã biết, vừa qua Faker đã cùng các đồng đội tại đội Liên Minh
-						Huyền Thoại (LMHT) Việt Nam giành Huy chương Vàng ASIAD. Tuy
-						nhiên, không thể ăn mừng được lâu, khi ngay sau giải đấu này, các
-						tuyển thủ chỉ có một quãng thời gian nghỉ ngơi cực ngắn, trước khi
-						bước vào Chung kết thế giới (CKTG) 2023. Giải đấu quốc tế lớn nhất
-						của làng LMHT cũng quan trọng không kém với Faker và T1 khi họ đã
-						"gục ngã trước cổng thiên đường" vào năm ngoái.
-					</p>
+
+					<!-- lớp nền để tạo hiệu ứng hover -->
+					<div class="card-grid__item__background"></div>
+
+					<!-- lớp chính chứa nội dung của card -->
+					<div class="card-grid__item__foreground">
+						<img class="card-grid__item__img" src="./images/esport/grid-card/img8.jpg" alt="" />
+						<h3 class="card-grid__item__title">
+							Vừa trở lại rank Hàn, Faker đã nhận "trái đắng", nhưng lại khiến
+							cộng đồng LMHT vô cùng xúc động
+						</h3>
+						<span class="card-grid__item__date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="card-grid__item__love">
+							<i class="fa-regular fa-heart not-loved"></i>
+							<i class="fa-solid fa-heart loved"></i>
+							3251
+						</span>
+						<p>
+							Như đã biết, vừa qua Faker đã cùng các đồng đội tại đội Liên Minh
+							Huyền Thoại (LMHT) Việt Nam giành Huy chương Vàng ASIAD. Tuy
+							nhiên, không thể ăn mừng được lâu, khi ngay sau giải đấu này, các
+							tuyển thủ chỉ có một quãng thời gian nghỉ ngơi cực ngắn, trước khi
+							bước vào Chung kết thế giới (CKTG) 2023. Giải đấu quốc tế lớn nhất
+							của làng LMHT cũng quan trọng không kém với Faker và T1 khi họ đã
+							"gục ngã trước cổng thiên đường" vào năm ngoái.
+						</p>
+					</div>
 				</div>
 				<div class="card-grid__item">
-					<img class="card-grid__item__img" src="./images/esport/grid-card/img9.jpg" alt="" />
-					<h3 class="card-grid__item__title">
-						Truyền thông Hàn xếp hạng 20 tuyển thủ mạnh nhất CKTG 2023, Faker
-						bất ngờ "bật bãi"
-					</h3>
-					<span class="card-grid__item__date">
-						<i class="fa-regular fa-clock"></i>
-						28/9/2023
-					</span>
-					<span class="card-grid__item__love">
-						<i class="fa-regular fa-heart not-loved"></i>
-						<i class="fa-solid fa-heart loved"></i>
-						3251
-					</span>
-					<p>
-						Mới đây, truyền thông Hàn đã tung ra kết quả bình chọn Top 20
-						tuyển thủ được đánh giá là mạnh nhất sẽ góp mặt tại CKTG 2023.
-						Theo đó, toàn bộ dàn sao của JDG và Gen.G đều góp mặt và Ruler là
-						tuyển thủ xếp hạng nhất trong khi Chovy ở ngay sau với vị trí thứ
-						hai. Điều này hoàn toàn hợp lý khi cả hai đều là linh hồn trong
-						lối chơi của đội chủ quản. Chưa kể, Ruler đang có phong độ rất cao
-						còn Chovy vừa có chức vô địch LCK thứ ba liên tiếp trong sự
-						nghiệp.
-					</p>
+
+					<!-- lớp nền để tạo hiệu ứng hover -->
+					<div class="card-grid__item__background"></div>
+
+					<!-- lớp chính chứa nội dung của card -->
+					<div class="card-grid__item__foreground">
+						<img class="card-grid__item__img" src="./images/esport/grid-card/img9.jpg" alt="" />
+						<h3 class="card-grid__item__title">
+							Truyền thông Hàn xếp hạng 20 tuyển thủ mạnh nhất CKTG 2023, Faker
+							bất ngờ "bật bãi"
+						</h3>
+						<span class="card-grid__item__date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="card-grid__item__love">
+							<i class="fa-regular fa-heart not-loved"></i>
+							<i class="fa-solid fa-heart loved"></i>
+							3251
+						</span>
+						<p>
+							Mới đây, truyền thông Hàn đã tung ra kết quả bình chọn Top 20
+							tuyển thủ được đánh giá là mạnh nhất sẽ góp mặt tại CKTG 2023.
+							Theo đó, toàn bộ dàn sao của JDG và Gen.G đều góp mặt và Ruler là
+							tuyển thủ xếp hạng nhất trong khi Chovy ở ngay sau với vị trí thứ
+							hai. Điều này hoàn toàn hợp lý khi cả hai đều là linh hồn trong
+							lối chơi của đội chủ quản. Chưa kể, Ruler đang có phong độ rất cao
+							còn Chovy vừa có chức vô địch LCK thứ ba liên tiếp trong sự
+							nghiệp.
+						</p>
+					</div>
 				</div>
 				<div class="card-grid__item">
-					<img class="card-grid__item__img" src="./images/esport/grid-card/img10.jpg" alt="" />
-					<h3 class="card-grid__item__title">
-						BLV Hoàng Luân buông lời phũ phàng về thành tích ASIAD của LMHT
-						Việt, fan ngẫm lại đúng vô cùng
-					</h3>
-					<span class="card-grid__item__date">
-						<i class="fa-regular fa-clock"></i>
-						28/9/2023
-					</span>
-					<span class="card-grid__item__love">
-						<i class="fa-regular fa-heart not-loved"></i>
-						<i class="fa-solid fa-heart loved"></i>
-						3251
-					</span>
-					<p>
-						Đối với riêng BLV Hoàng Luân, anh thừa nhận bản thân không hài
-						lòng với những gì mà các tuyển thủ LMHT Việt thể hiện ở Hàng Châu.
-						Trong một buổi stream gần đây, nam BLV thẳng thắn đặt câu hỏi:
-						"Tại sao các tuyển thủ Việt cứ phải để đến khi không còn bất kỳ
-						mục tiêu nào tranh đấu thì mới chịu thể hiện một cách tốt nhất?".
-						Theo nam BLV, điều này đã lặp đi lặp lại không ít lần trong quá
-						khứ.
-					</p>
+
+					<!-- lớp nền để tạo hiệu ứng hover -->
+					<div class="card-grid__item__background"></div>
+
+					<!-- lớp chính chứa nội dung của card -->
+					<div class="card-grid__item__foreground">
+						<img class="card-grid__item__img" src="./images/esport/grid-card/img10.jpg" alt="" />
+						<h3 class="card-grid__item__title">
+							BLV Hoàng Luân buông lời phũ phàng về thành tích ASIAD của LMHT
+							Việt, fan ngẫm lại đúng vô cùng
+						</h3>
+						<span class="card-grid__item__date">
+							<i class="fa-regular fa-clock"></i>
+							28/9/2023
+						</span>
+						<span class="card-grid__item__love">
+							<i class="fa-regular fa-heart not-loved"></i>
+							<i class="fa-solid fa-heart loved"></i>
+							3251
+						</span>
+						<p>
+							Đối với riêng BLV Hoàng Luân, anh thừa nhận bản thân không hài
+							lòng với những gì mà các tuyển thủ LMHT Việt thể hiện ở Hàng Châu.
+							Trong một buổi stream gần đây, nam BLV thẳng thắn đặt câu hỏi:
+							"Tại sao các tuyển thủ Việt cứ phải để đến khi không còn bất kỳ
+							mục tiêu nào tranh đấu thì mới chịu thể hiện một cách tốt nhất?".
+							Theo nam BLV, điều này đã lặp đi lặp lại không ít lần trong quá
+							khứ.
+						</p>
+					</div>
 				</div>
 			</section>
 
@@ -369,37 +439,53 @@
 
 		<!-- main sidebar -->
 		<div class="main__sidebar">
-			<ul class="social-page__list">
-				<li class="social-page__item facebook-page">
-					<i class="fa-brands fa-facebook-f"></i>
-					<div class="social-page__item__content">
-						<p>LIKE OUR FACEBOOK</p>
-						<p>4,032,001 LIKES</p>
-					</div>
-					<i class="fa-regular fa-square-plus"></i>
-				</li>
-
-				<li class="social-page__item twitter-page">
-					<i class="fa-brands fa-twitter"></i>
-					<div class="social-page__item__content">
-						<p>LIKE OUR TWITTER</p>
-						<p>3,294,213 LIKES</p>
-					</div>
-					<i class="fa-regular fa-square-plus"></i>
-				</li>
-
-				<li class="social-page__item youtube-page">
-					<i class="fa-brands fa-youtube"></i>
-					<div class="social-page__item__content">
-						<p>LIKE OUR YOUTUBE</p>
-						<p>2,953,314 LIKES</p>
-					</div>
-					<i class="fa-regular fa-square-plus"></i>
-				</li>
-			</ul>
+			<div class="follow-us">
+				<h2 class="follow-us__title">THEO DÕI CHÚNG TÔI</h1>
+	
+				<hr style="margin: 0 auto 5px 0" />
+				<hr style="margin: 0 auto 30px 0" />
+	
+				<ul class="social-page__list">
+					<li class="social-page__item facebook-page">
+						<i class="fa-brands fa-facebook-f"></i>
+						<div class="social-page__item__content">
+							<p>FACEBOOK</p>
+							<p>4,032,001 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
+	
+					<li class="social-page__item twitter-page">
+						<i class="fa-brands fa-twitter"></i>
+						<div class="social-page__item__content">
+							<p>TWITTER</p>
+							<p>3,294,213 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
+	
+					<li class="social-page__item youtube-page">
+						<i class="fa-brands fa-youtube"></i>
+						<div class="social-page__item__content">
+							<p>YOUTUBE</p>
+							<p>2,953,314 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
+	
+					<li class="social-page__item tiktok-page">
+						<i class="fa-brands fa-tiktok"></i>
+						<div class="social-page__item__content">
+							<p>TIKTOK</p>
+							<p>3,953,314 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
+				</ul>
+			</div>
 
 			<div class="recent-post">
-				<h1 class="recent-post__title">RECENT POST</h1>
+				<h2 class="recent-post__title">BÀI VIẾT GẦN ĐÂY</h2>
 
 				<hr style="margin: 0 auto 5px 0" />
 				<hr style="margin: 0 auto 30px 0" />
@@ -454,7 +540,7 @@
 			</div>
 
 			<div class="playoffs">
-				<h1 class="playoffs__title">PLAYOFFS</h1>
+				<h2 class="playoffs__title">PLAYOFFS</h2>
 
 				<hr style="margin: 0 auto 5px 0" />
 				<hr style="margin: 0 auto 30px 0" />
@@ -569,7 +655,7 @@
 			</div>
 
 			<div class="next-match">
-				<h1>NEXT MATCH</h1>
+				<h2>TRẬN TIẾP THEO</h2>
 
 				<hr style="margin: 0 auto 5px 0" />
 				<hr style="margin: 0 auto 30px 0" />
@@ -671,7 +757,7 @@
 				Contact
 			</h2>
 			<p>
-				<i class="fa-solid fa-location-dot mr-4" style="color: #4da8a4"></i>CTU, CAN THO, VIETNAM
+				<i class="fa-solid fa-location mr-4" style="color: #4da8a4"></i>CTU, CAN THO, VIETNAM
 			</p>
 			<hr class="mr-5" />
 			<p>
@@ -721,8 +807,8 @@
 
 		function showSlides() {
 			let i;
-			let slides = document.getElementsByClassName("mySlides");
-			let dots = document.getElementsByClassName("dot");
+			let slides = document.getElementsByClassName("slideshow__item");
+			let slideshow__dots = document.getElementsByClassName("slideshow__dot");
 			for (i = 0; i < slides.length; i++) {
 				slides[i].style.display = "none";
 			}
@@ -730,11 +816,11 @@
 			if (slideIndex > slides.length) {
 				slideIndex = 1;
 			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
+			for (i = 0; i < slideshow__dots.length; i++) {
+				slideshow__dots[i].className = slideshow__dots[i].className.replace(" active", "");
 			}
 			slides[slideIndex - 1].style.display = "block";
-			dots[slideIndex - 1].className += " active";
+			slideshow__dots[slideIndex - 1].className += " active";
 			setTimeout(showSlides, 3000);
 		}
 	</script>
