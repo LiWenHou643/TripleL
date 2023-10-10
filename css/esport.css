@@ -8,12 +8,13 @@ body {
   grid-template-areas: 'article sidebar';
   grid-template-rows: auto;
   margin: 80px 100px 0;
+  background-color: #00ff80;
+
 }
 
 .main__article {
   grid-area: article;
 }
-
 
 /* Slideshow container */
 .main__article .slideshow__container {
@@ -485,3 +486,4 @@ p {
   background-color: #000000;
   color: #ffffff;
 }
+
