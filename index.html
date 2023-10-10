@@ -77,28 +77,34 @@
 		<article class="main__article">
 			<!-- Slide show -->
 			<section class="slideshow__container">
-				<div class="slideshow__item fade">
-					<div class="slideshow__item__numbertext">1 / 4</div>
-					<img src="./images/esport/img1.jpg" />
-				</div>
-				<div class="slideshow__item fade">
-					<div class="slideshow__item__numbertext">2 / 4</div>
-					<img src="./images/esport/img2.jpg" />
-				</div>
-				<div class="slideshow__item fade">
-					<div class="slideshow__item__numbertext">3 / 4</div>
-					<img src="./images/esport/img3.jpg" />
-				</div>
-				<div class="slideshow__item fade">
-					<div class="slideshow__item__numbertext">4 / 4</div>
-					<img src="./images/esport/img4.jpg" />
+				<div class="slideshow__list">
+					<div class="slideshow__item slideshow__item--1 fade">
+						<div class="slideshow__numbertext">1 / 4</div>
+						<img src="./images/esport/img1.jpg" />
+					</div>
+					<div class="slideshow__item slideshow__item--2 fade">
+						<div class="slideshow__numbertext">2 / 4</div>
+						<img src="./images/esport/img2.jpg" />
+					</div>
+					<div class="slideshow__item slideshow__item--3 fade">
+						<div class="slideshow__numbertext">3 / 4</div>
+						<img src="./images/esport/img3.jpg" />
+					</div>
+					<div class="slideshow__item slideshow__item--4 fade">
+						<div class="slideshow__numbertext">4 / 4</div>
+						<img src="./images/esport/img4.jpg" />
+					</div>
 				</div>
 
-				<div style="text-align: center">
-					<span class="slideshow__dot"></span>
-					<span class="slideshow__dot"></span>
-					<span class="slideshow__dot"></span>
-					<span class="slideshow__dot"></span>
+				<div class="slideshow__buttons">
+					<button class="slideshow__prev-btn">&#x1F894</button>
+					<button class="slideshow__next-btn">&#x1F896</button>
+				</div>
+				<div class="slideshow__dots">
+					<span class="dot__item dot__item--1 active"></span>
+					<span class="dot__item dot__item--2"></span>
+					<span class="dot__item dot__item--3"></span>
+					<span class="dot__item dot__item--4"></span>
 				</div>
 			</section>
 
@@ -228,7 +234,7 @@
 								một môn thể thao truyền thống, cạnh tranh huy chương, các tuyển
 								thủ đã không bỏ lỡ cơ hội này để giành về tấm HCV.
 							</p>
-							<button class="card-grid__item__details">Xem chi tiết</button>	
+							<button class="card-grid__item__details">Xem chi tiết</button>
 						</div>
 					</div>
 				</div>
@@ -450,47 +456,47 @@
 		<div class="main__sidebar">
 			<div class="follow-us">
 				<h2 class="follow-us__title">THEO DÕI CHÚNG TÔI</h1>
-	
-				<hr style="margin: 0 auto 5px 0" />
-				<hr style="margin: 0 auto 30px 0" />
-	
-				<ul class="social-page__list">
-					<li class="social-page__item facebook-page">
-						<i class="fa-brands fa-facebook-f"></i>
-						<div class="social-page__item__content">
-							<p>FACEBOOK</p>
-							<p>4,032,001 LIKES</p>
-						</div>
-						<i class="fa-regular fa-square-plus"></i>
-					</li>
-	
-					<li class="social-page__item twitter-page">
-						<i class="fa-brands fa-twitter"></i>
-						<div class="social-page__item__content">
-							<p>TWITTER</p>
-							<p>3,294,213 LIKES</p>
-						</div>
-						<i class="fa-regular fa-square-plus"></i>
-					</li>
-	
-					<li class="social-page__item youtube-page">
-						<i class="fa-brands fa-youtube"></i>
-						<div class="social-page__item__content">
-							<p>YOUTUBE</p>
-							<p>2,953,314 LIKES</p>
-						</div>
-						<i class="fa-regular fa-square-plus"></i>
-					</li>
-	
-					<li class="social-page__item tiktok-page">
-						<i class="fa-brands fa-tiktok"></i>
-						<div class="social-page__item__content">
-							<p>TIKTOK</p>
-							<p>3,953,314 LIKES</p>
-						</div>
-						<i class="fa-regular fa-square-plus"></i>
-					</li>
-				</ul>
+
+					<hr style="margin: 0 auto 5px 0" />
+					<hr style="margin: 0 auto 30px 0" />
+
+					<ul class="social-page__list">
+						<li class="social-page__item facebook-page">
+							<i class="fa-brands fa-facebook-f"></i>
+							<div class="social-page__item__content">
+								<p>FACEBOOK</p>
+								<p>4,032,001 LIKES</p>
+							</div>
+							<i class="fa-regular fa-square-plus"></i>
+						</li>
+
+						<li class="social-page__item twitter-page">
+							<i class="fa-brands fa-twitter"></i>
+							<div class="social-page__item__content">
+								<p>TWITTER</p>
+								<p>3,294,213 LIKES</p>
+							</div>
+							<i class="fa-regular fa-square-plus"></i>
+						</li>
+
+						<li class="social-page__item youtube-page">
+							<i class="fa-brands fa-youtube"></i>
+							<div class="social-page__item__content">
+								<p>YOUTUBE</p>
+								<p>2,953,314 LIKES</p>
+							</div>
+							<i class="fa-regular fa-square-plus"></i>
+						</li>
+
+						<li class="social-page__item tiktok-page">
+							<i class="fa-brands fa-tiktok"></i>
+							<div class="social-page__item__content">
+								<p>TIKTOK</p>
+								<p>3,953,314 LIKES</p>
+							</div>
+							<i class="fa-regular fa-square-plus"></i>
+						</li>
+					</ul>
 			</div>
 
 			<div class="recent-post">
@@ -668,7 +674,7 @@
 
 				<hr style="margin: 0 auto 5px 0" />
 				<hr style="margin: 0 auto 30px 0" />
-				
+
 				<div class="next-match__board">
 					<h3>CHAMPIONSHIP QUARTER FINALS</h3>
 					<div class="display-date">
@@ -812,26 +818,44 @@
 	<!-- Slideshow animation -->
 	<script>
 		let slideIndex = 0;
-		showSlides();
+		let slideList = document.querySelector('.slideshow__list');
+		let slideItems = document.querySelectorAll('.slideshow__item');
+		let next = document.querySelector('.slideshow__next-btn');
+		let prev = document.querySelector('.slideshow__prev-btn');
+		let dots = document.querySelectorAll('.dot__item');
 
-		function showSlides() {
-			let i;
-			let slides = document.getElementsByClassName("slideshow__item");
-			let slideshow__dots = document.getElementsByClassName("slideshow__dot");
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-			}
-			slideIndex++;
-			if (slideIndex > slides.length) {
-				slideIndex = 1;
-			}
-			for (i = 0; i < slideshow__dots.length; i++) {
-				slideshow__dots[i].className = slideshow__dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex - 1].style.display = "block";
-			slideshow__dots[slideIndex - 1].className += " active";
-			setTimeout(showSlides, 3000);
+		let lengthItems = slideItems.length - 1;
+		let active = 0;
+
+		next.onclick = function () {
+			active = active + 1 <= lengthItems ? active + 1 : 0;
+			reloadSlider();
 		}
+		prev.onclick = function () {
+			active = active - 1 >= 0 ? active - 1 : lengthItems;
+			reloadSlider();
+		}
+		let refreshInterval = setInterval(() => { next.click() }, 3000);
+
+		function reloadSlider() {
+			slideList.style.left = -slideItems[active].offsetLeft + 'px';
+			
+			let last_active_dot = document.querySelector('.dot__item.active');
+			last_active_dot.classList.remove('active');
+			dots[active].classList.add('active');
+
+			clearInterval(refreshInterval);
+			refreshInterval = setInterval(() => { next.click() }, 3000);
+
+		}
+
+		dots.forEach((dot, index) => {
+			dot.addEventListener('click', () => {
+				active = index;
+				reloadSlider();
+			})
+		})
+
 	</script>
 
 	<!-- Click Heart icon in news card  -->
