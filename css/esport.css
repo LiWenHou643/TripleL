@@ -7,9 +7,8 @@ body {
   grid-template-columns: 5fr 2fr;
   grid-template-areas: 'article sidebar';
   grid-template-rows: auto;
-  margin: 80px 100px 0;
-  background-color: #00ff80;
-
+  margin: 0 100px;
+  padding-top: 80px;
 }
 
 .main__article {
@@ -19,7 +18,7 @@ body {
 /* Slideshow container */
 .main__article .slideshow__container {
   width: 100%;
-  height: 480px;
+  padding-top: 60%;
   margin: 0 auto 100px;
   position: relative;
   overflow: hidden;
@@ -71,7 +70,7 @@ body {
   background-color: rgba(255, 255, 255, 0);
   position: absolute;
   border: none;
-  color: rgb(255, 238, 0);
+  color: #ff7300;
   transition: background-color .4s ease;
 }
 
@@ -101,18 +100,18 @@ body {
   height: 15px;
   width: 15px;
   margin: 20px 5px 0;
-  border: #000000 solid 3px;
+  border: #ff7300 solid 3px;
   border-radius: 50%;
   transition: background-color 0.6s ease;
 }
 
 .main__article .slideshow__container .slideshow__dots .dot__item:hover {
-  background-color: #fffb00;
+  background-color: #ff7300;
   cursor: pointer;
 }
 
 .main__article .slideshow__container .slideshow__dots .dot__item.active {
-  background-color: #fffb00;
+  background-color: #ff7300;
 }
 
 
@@ -131,14 +130,14 @@ body {
   z-index: 1;
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__background {
+.main__article .card-grid__container .card-grid__item .card__background {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   transition: all .3s;
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__foreground{
+.main__article .card-grid__container .card-grid__item .card__foreground{
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -150,60 +149,66 @@ body {
   z-index: 1;
 }
 
-.main__article .card-grid__container .card-grid__item:hover .card-grid__item__background {
+.main__article .card-grid__container .card-grid__item:hover .card__background {
   border-radius: 20px;
 }
 
-.main__article .card-grid__container .card-grid__item:hover .card-grid__item__foreground {
+.main__article .card-grid__container .card-grid__item:hover .card__foreground {
   transform: scale(0.98);
   border-radius: 20px;
 }
 
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__img {
+.main__article .card-grid__container .card-grid__item .card__img {
   width: 100%;
-  height: 250px;
+  padding-top: 60%;
+  height: 0;
+  position: relative;
 }
 
-.main__article .card-grid__container .card-grid__item:hover .card-grid__item__img {
-  border-radius: 1rem 1rem 0 0;
-}
-
-.main__article .card-grid__container .card-grid__item .card-grid__item__img img {
+.main__article .card-grid__container .card-grid__item .card__img img {
+  position:  absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__title {
+.main__article .card-grid__container .card-grid__item:hover .card__img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+
+.main__article .card-grid__container .card-grid__item .card__title {
   color: #d67f2d;
   height: 60px;
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__date {
+.main__article .card-grid__container .card-grid__item .card__date {
   color: #00a00d
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__love {
+.main__article .card-grid__container .card-grid__item .card__love {
   color: #ff0000;
   margin-left: 10px;
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__love .loved:hover,
-.main__article .card-grid__container .card-grid__item .card-grid__item__love .not-loved:hover {
+.main__article .card-grid__container .card-grid__item .card__love .loved:hover,
+.main__article .card-grid__container .card-grid__item .card__love .not-loved:hover {
   cursor: pointer;
   scale: 1.2;
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__love .loved {
+.main__article .card-grid__container .card-grid__item .card__love .loved {
   display: none;
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__love.active .loved {
+.main__article .card-grid__container .card-grid__item .card__love.active .loved {
   display: inline-block;
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__love.active .not-loved {
+.main__article .card-grid__container .card-grid__item .card__love.active .not-loved {
   display: none;
 }
 
@@ -218,7 +223,7 @@ body {
   margin: 10px 0;
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__details {
+.main__article .card-grid__container .card-grid__item .card__more-info {
   width: 50%;
   height: 50px;
   color: #000;
@@ -226,25 +231,25 @@ body {
   background-size: 800% 800%;
   transition: .3s;
   border: none;
-  margin: auto;
+  margin:  20px auto;
   display: block;
 }
 
-.main__article .card-grid__container .card-grid__item .card-grid__item__details:hover {
+.main__article .card-grid__container .card-grid__item .card__more-info:hover {
   cursor: pointer;
   border-radius: 10px;
   background-size: 800% 800%;
   animation: infinite-color 2s ease infinite;
 } 
 /* Pagination*/
-.pagination {
+.main__article .pagination {
   display: flex;
   justify-content: center;
   margin: 50px auto 0px;
 }
 
 /* Pagination links */
-.pagination a {
+.main__article .pagination a {
   color: #fff;
   float: left;
   padding: 8px 16px;
@@ -253,13 +258,13 @@ body {
 }
 
 /* Style the active/current link */
-.pagination a.active {
+.main__article .pagination a.active {
   background-color: rgb(0, 87, 173);
   color: white;
 }
 
 /* Add a grey background color on mouse-over */
-.pagination a:hover:not(.active) {
+.main__article .pagination a:hover:not(.active) {
   background-color: #c43434;
 }
 
@@ -429,7 +434,7 @@ p {
 
 /* next-mactch */
 .main__sidebar .next-match {
-  height: 400px;
+  height: 350px;
   width: 100%;
 }
 
@@ -487,3 +492,46 @@ p {
   color: #ffffff;
 }
 
+
+
+/* Responsive web deign */
+
+/* Tablet: 740px <= width < 1024px  */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .main {
+    grid-template-columns: auto;
+    grid-template-areas: 'article' 'sidebar';
+  }
+}
+/* Mobile: width < 740px */
+@media screen and (max-width: 739px) {
+  .main {
+    grid-template-columns: auto;
+    grid-template-areas: 'article' 'sidebar';
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10px;
+  }
+  .main__article {
+    margin-bottom: 40px;
+  }
+  .main__article .slideshow__container {
+    margin-bottom: 20px;
+  }
+  .main__article .card-grid__container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+  }
+  .main__sidebar {
+    margin: 0 10px 20px;
+  }
+  
+  .main__sidebar .recent-post,
+  .main__sidebar .playoffs,
+  .main__sidebar .next-match {
+    margin-top: 60px;
+  }
+}
