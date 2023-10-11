@@ -1,26 +1,38 @@
-.footer {
-    margin-top: 0;
-    border: none;
+body {
+    background: url('../images/survey/bg.jpg') no-repeat fixed center;
+    background-size: cover;
 }
 
+.header {
+    background-color: #000000da;
+  }
+
 .main {
-    margin: 60px 0 0;
-    background-color: rgb(22, 112, 108);
-    height: 100vh;
+    min-height: 1000px;
     width: 100%;
+    padding-top: 100px;
 }
 
 .main .survey-form__container {
-    width: 30%;
-    margin: 10px auto;
-    padding: 10px;
-    background: rgba(0, 0, 0, .5);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    width: 800px;
+    margin: auto;
+    background: rgba(0, 0, 0, .8);
     border-radius: 10px;
 }
 
+.main .survey-form__container form {
+    width: 100%;
+    min-height: 750px;
+}
+
 .main .survey-form__container fieldset {
-    padding: 20px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.main .survey-form__container fieldset legend{
+    text-align: center;
+    font-size: 1.6rem;
 }
 
 .main .survey-form__container .survey-form__title {
@@ -30,7 +42,11 @@
 }
 
 .main .survey-form__container .survey-form__item {
-    position: relative;
+    min-height: 100px;
+}
+
+.main .survey-form__container .survey-form__item textarea {
+    resize: vertical;
 }
 
 .main .survey-form__container .survey-form__item input,
@@ -47,9 +63,6 @@ textarea {
 }
 
 .main .survey-form__container .survey-form__item label {
-    position: absolute;
-    top: 0;
-    left: 0;
     padding: 10px 0;
     font-size: 16px;
     color: #fff;
@@ -57,17 +70,6 @@ textarea {
     transition: .5s;
 }
 
-.main .survey-form__container .survey-form__item input[type=text]:focus~label,
-.main .survey-form__container .survey-form__item input[type=text]:valid~label,
-.main .survey-form__container .survey-form__item input[type=email]:focus~label,
-.main .survey-form__container .survey-form__item input[type=email]:valid~label,
-.main .survey-form__container .survey-form__item textarea:focus~label,
-.main .survey-form__container .survey-form__item textarea:valid~label {
-    top: -20px;
-    left: 0;
-    color: #03e9f4;
-    font-size: 12px;
-}
 
 .main .survey-form__container .survey-form__submit-btn {
     align-items: center;
@@ -78,7 +80,6 @@ textarea {
     box-sizing: border-box;
     color: #FFFFFF;
     display: flex;
-    font-family: Phantomsans, sans-serif;
     font-size: 18px;
     justify-content: center;
     line-height: 1em;
@@ -114,4 +115,11 @@ textarea {
 
 .main .survey-form__container .survey-form__submit-btn:active {
     transform: scale(0.9);
+}
+
+
+.footer {
+    margin-top: 0;
+    border: none;
+    background-color: #000000da;
 }

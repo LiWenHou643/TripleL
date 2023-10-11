@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="./css/all.css" />
 	<link rel="stylesheet" href="./css/survey-form.css" />
 	<link rel="shortcut icon" href="./images/fav.png" type="image/x-icon" />
-	<title>Home | TripleL News</title>
+	<title>Survey | TripleL News</title>
 </head>
 
 <body>
@@ -26,15 +26,22 @@
 		</a>
 		<ul class="header__navbar">
 			<li class="header__navbar__item">
-				<a href="./sport.html">SPORT</a>
-			</li>
-			<li class="header__navbar__item">
 				<a href="#home">HOME</a>
 			</li>
 			<li class="header__navbar__item">
-				<a class="header__navbar__item--active" href="./esport.html">ESPORT</a>
+				<a href="./sport.html">SPORT</a>
+			</li>
+			<li class="header__navbar__item">
+				<a class="header__navbar__item" href="./esport.html">ESPORT</a>
+			</li>
+			<li class="header__navbar__item">
+				<a class="header__navbar__item--active" href="./survey-form.html">SURVEY</a>
 			</li>
 		</ul>
+		<!-- Mobile -->
+		<a class="header__navbar-icon">
+			<i class="fa-solid fa-bars"></i>
+		</a>
 		<form class="header__search" method="get" action="">
 			<input class="header__search__input" type="text" name="search" placeholder=" Tìm kiếm" />
 			<button class="header__search__button" type="submit" title="search">
@@ -72,49 +79,41 @@
 		</form>
 	</header>
 
-    <!-- Main -->
-    <main class="main">
-        <div class="survey-form__container">
-            <form method="POST" action="">
-                <fieldset>
-                    <legend class="survey-form__title">PHIẾU KHẢO SÁT</legend>
-                    <div class="survey-form__item">
+	<!-- Main -->
+	<main class="main">
+		<div class="survey-form__container">
+			<form method="POST" action="">
+				<fieldset>
+					<legend class="survey-form__title">PHIẾU KHẢO SÁT</legend>
+					<div class="survey-form__item">
+						<label>Họ tên</label>
 						<input type="text" required>
-                        <label>Họ tên</label>
-                    </div>
-                    <div class="survey-form__item">
+					</div>
+					<div class="survey-form__item">
+						<label>Email</label>
 						<input type="email" required>
-                        <label>Email</label>
-                    </div>
-					<div class="survey-form__item">
-						<textarea name="" cols="30" rows="10" required></textarea>
-                        <label>Đóng góp ý kiến</label>
 					</div>
 					<div class="survey-form__item">
-						<input type="radio" id="html" name="fav_language" value="HTML">
-						<label for="html">HTML</label><br>
-						<input type="radio" id="css" name="fav_language" value="CSS">
-						<label for="css">CSS</label><br>
-						<input type="radio" id="javascript" name="fav_language" value="JavaScript">
-						<label for="javascript">JavaScript</label>
+						<label>Đóng góp ý kiến</label>
+						<textarea name="" rows="10" required></textarea>
 					</div>
 					<div class="survey-form__item">
-						<label for="cars">Choose a car:</label>
-						<select name="cars" id="cars">
-						<option value="volvo">Volvo</option>
-						<option value="saab">Saab</option>
-						<option value="mercedes">Mercedes</option>
-						<option value="audi">Audi</option>
+						<label for="cars" style="margin-right: 100px;">Bạn thích đọc tin tức nào :</label>
+						<select name="cars" id="cars" style="width: 200px; text-align: center;">
+							<option value=""> -- Chọn --</option>
+							<option value="Sport">Sport</option>
+							<option value="Esport">Esport</option>
+							<option value="Both">Cả hai</option>
 						</select>
 					</div>
 					<button class="survey-form__submit-btn" type="submit">
 						<span>Gửi</span>
 					</button>
-                </fieldset>
-            </form>
-        </div>
-          
-    </main>
+				</fieldset>
+			</form>
+		</div>
+
+	</main>
 
 	<!-- Footer -->
 	<footer class="footer">
@@ -221,5 +220,41 @@
 		<!-- Grid column -->
 	</footer>
 	<!-- Footer -->
+
+
+	<!-- When the user scrolls down, hide the header. When the user scrolls up, show the header -->
+	<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function () {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.querySelector('.header').style.top = '0';
+			} else {
+				document.querySelector('.header').style.top = '-60px';
+			}
+			prevScrollpos = currentScrollPos;
+		}
+	</script>
+
+	<!-- Mobile: header navbar-->
+	<script>
+		// Navbar
+		let menuIcon = document.querySelector('.header__navbar-icon');
+		let header = document.querySelector('.header');
+		menuIcon.onclick = () => {
+			if (header.classList.contains('active')) header.classList.remove('active');
+			else header.classList.add('active');
+		}
+
+		// Search
+		let searchBtn = document.querySelector('.header__search__button');
+		let searchBar = document.querySelector('.header__search');
+		searchBtn.onclick = () => {
+			if (searchBar.classList.contains('active')) searchBar.classList.remove('active');
+			else searchBar.classList.add('active');
+		}
+
+	</script>
 </body>
+
 </html>
