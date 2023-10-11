@@ -34,8 +34,8 @@
 			<li class="header__navbar__item">
 				<a class="header__navbar__item--active" href="./esport.html">ESPORT</a>
 			</li>
-
 		</ul>
+		<!-- Mobile -->
 		<a class="header__navbar-icon">
 			<i class="fa-solid fa-bars"></i>
 		</a>
@@ -841,12 +841,22 @@
 
 	<!-- Mobile: header navbar-->
 	<script>
-		let menuIcon = document.querySelector('.header__navbar-icon')
-		let header = document.querySelector('.header')
+		// Navbar
+		let menuIcon = document.querySelector('.header__navbar-icon');
+		let header = document.querySelector('.header');
 		menuIcon.onclick = () => {
 			if (header.classList.contains('active')) header.classList.remove('active');
 			else header.classList.add('active');
 		}
+
+		// Search
+		let searchBtn = document.querySelector('.header__search__button');
+		let searchBar = document.querySelector('.header__search');
+		searchBtn.onclick = () => {
+			if (searchBar.classList.contains('active')) searchBar.classList.remove('active');
+			else searchBar.classList.add('active');
+		}
+
 	</script>
 
 	<!-- Slideshow animation -->

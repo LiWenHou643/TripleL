@@ -193,33 +193,61 @@ footer .post-gallery img:hover {
 		background-color: #1a1a1a;
 	}
 
-	.header .header__navbar-icon {
-		width: 100%;
-		display: block;
-		border-radius: 50px;
-		font-size: 1.4em;
-		cursor: pointer;
-		transition: .3s ease;
+	.header.active .header__navbar .header__navbar__item {
+		height: 40px;
 	}
 
+	.header.active .header__navbar .header__navbar__item a {
+		text-align: start;
+		border-radius: 0;
+	}
+
+	.header .header__navbar-icon {
+		display: block;
+		transition: .3s ease;
+		flex: 0;
+	}
+	
 	.header .header__navbar-icon i {
+		font-size: 1.4em;
 		color: #000000;
 		background-color: #ffffff;
 		height: 50px;
 		width: 50px;
 		display: flex;
-		margin: 0 auto;
+		margin: 0 auto;	
 		align-items: center;
 		justify-content: center;
 		border-radius: 50px;
+		cursor: pointer;
 	}
 
 	.header.active .header__navbar-icon i {
 		transform: rotate(90deg);
 	}
 
-	.header .header__search__input {
+	.header .header__search {
 		display: none;
+	}
+	.header .header__search .header__search__input {
+		width: 100%;
+		border-radius: 0;
+		padding: 16px 0 16px 10px;
+		margin: 0;
+		position: absolute;
+		left: 0;
+	}
+
+	.header .header__search .header__search__button {
+		border-radius: 0;
+	}
+
+	.header.active .header__search {
+		position: absolute;
+		top: 186px;
+		left: 0px;
+		width: 100%;
+		display: block;
 	}
 
 	.footer {
