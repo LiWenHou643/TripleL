@@ -177,12 +177,14 @@ body {
 
 .main__article .card-grid__container .card-grid__item:hover .card__img {
   border-radius: 1rem 1rem 0 0;
+  cursor: pointer;
 }
 
 
 .main__article .card-grid__container .card-grid__item .card__title {
   color: #d67f2d;
   height: 60px;
+  cursor: pointer;
 }
 
 .main__article .card-grid__container .card-grid__item .card__date {
@@ -275,7 +277,7 @@ body {
   margin-left: 20px;
 }
 
-.main__sidebar .follow-us .follow-us__title {
+.main__sidebar .follow-us > h2 {
   color: #fff;
   margin: 0 0 20px;
 }
@@ -414,7 +416,7 @@ p {
 
 .main__sidebar .playoffs .playoffs__table th,
 .main__sidebar .playoffs .playoffs__table td {
-  height: 50px;
+  height: 55px;
   border: solid 2px #fff;
   text-align: center;
 }
@@ -439,7 +441,7 @@ p {
 }
 
 .main__sidebar .next-match .next-match__board {
-  background-color: #730077;
+  background-color: #0094a8;
   padding: 20px;
   text-align: center;
 }
@@ -488,6 +490,7 @@ p {
 }
 
 .main__sidebar .subscribe button:hover {
+  cursor: pointer;
   background-color: #000000;
   color: #ffffff;
 }
@@ -496,35 +499,127 @@ p {
 
 /* Responsive web deign */
 
-/* Tablet: 740px <= width < 1024px  */
-@media screen and (min-width: 740px) and (max-width: 1023px) {
-  .main {
-    grid-template-columns: auto;
-    grid-template-areas: 'article' 'sidebar';
-  }
-}
-/* Mobile: width < 740px */
-@media screen and (max-width: 739px) {
+/* Tablet: 740px < width <= 1024px  */
+@media screen and (min-width: 741px) and (max-width: 1024px) {
   .main {
     grid-template-columns: auto;
     grid-template-areas: 'article' 'sidebar';
     margin-left: 0;
     margin-right: 0;
-    padding-top: 10px;
+    padding-top: 60px;
   }
+
   .main__article {
     margin-bottom: 40px;
   }
+
   .main__article .slideshow__container {
     margin-bottom: 20px;
   }
+
   .main__article .card-grid__container {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
+    grid-row-gap: 10px;
+    margin: 0 10px;
   }
+
+  .main__article .card-grid__container .card-grid__item:hover .card__foreground,
+  .main__article .card-grid__container .card-grid__item:active .card__foreground {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+  
+  .main__sidebar {
+    margin: 0 10px 20px;
+    display: grid;
+    grid-template-areas:  'recent playoffs'
+                          'social next'
+                          'social sub';
+    grid-column-gap: 30px;
+    grid-template-rows: auto;
+  }
+
+  .main__sidebar .follow-us {
+    grid-area: social;
+  }
+
+  .main__sidebar .follow-us > h2 {
+    margin: 20px 0;
+  }
+
+  .main__sidebar .recent-post {
+    grid-area: recent;
+  }
+
+  .main__sidebar .playoffs {
+    grid-area: playoffs;
+  }
+
+  .main__sidebar .next-match {
+    grid-area: next;
+  }
+
+  .main__sidebar .subscribe {
+    grid-area: sub;
+  }
+
+  .main__sidebar .follow-us,
+  .main__sidebar .recent-post,
+  .main__sidebar .playoffs,
+  .main__sidebar .next-match {
+    margin-top: 30px;
+  }
+  .main__sidebar .subscribe {
+    height: 250px;
+  }
+  .main__sidebar .playoffs .playoffs__table td.playoffs__table_team-name {
+    padding-left: 20%;
+  }
+
+  .main__sidebar .recent-post .recent-post__list .recent-post__item {
+    height: 102.5px;
+  }
+
+  .main__sidebar .social-page__list .social-page__item {
+    height: 130px;
+  }
+}
+
+
+/* Mobile: width <= 740px */
+@media screen and (max-width: 740px) {
+  .main {
+    grid-template-columns: auto;
+    grid-template-areas: 'article' 'sidebar';
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 60px;
+  }
+
+  .main__article {
+    margin-bottom: 40px;
+  }
+
+  .main__article .slideshow__container {
+    margin-bottom: 10px;
+  }
+
+  .main__article .card-grid__container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    margin: 0 10px;
+  }
+
+  .main__article .card-grid__container .card-grid__item:hover .card__foreground,
+  .main__article .card-grid__container .card-grid__item:active .card__foreground {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+
   .main__sidebar {
     margin: 0 10px 20px;
   }
