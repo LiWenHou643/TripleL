@@ -575,7 +575,7 @@ p {
     height: 250px;
   }
   .main__sidebar .playoffs .playoffs__table td.playoffs__table_team-name {
-    padding-left: 20%;
+    padding-left: 15%;
   }
 
   .main__sidebar .recent-post .recent-post__list .recent-post__item {
@@ -628,5 +628,9 @@ p {
   .main__sidebar .playoffs,
   .main__sidebar .next-match {
     margin-top: 60px;
+  }
+
+  .main__sidebar .playoffs .playoffs__table td.playoffs__table_team-name {
+    padding-left: 15%;
   }
 }
