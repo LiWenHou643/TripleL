@@ -200,7 +200,7 @@ footer .post-gallery img:hover {
 	}
 
 	.header.active .header__navbar .header__navbar__item {
-		height: 40px;
+		height: 45px;
 	}
 
 	.header.active .header__navbar .header__navbar__item a {
@@ -250,7 +250,7 @@ footer .post-gallery img:hover {
 
 	.header.active .header__search {
 		position: absolute;
-		top: 186px;
+		top: 195px;
 		left: 0px;
 		width: 100%;
 		display: block;
