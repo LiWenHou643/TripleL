@@ -140,8 +140,8 @@ body::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 40px;
+  column-gap: 20px;
+  row-gap: 40px;
 }
 
 .main__article .card-grid__container .card-grid__item {
@@ -400,7 +400,7 @@ body::after {
 }
 
 .main__sidebar .recent-post .recent-post__list .recent-post__item:hover {
-  box-shadow: 0px 8px 10px 0px rgb(14, 126, 255);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 66, 52), rgb(0, 172, 115), rgb(240, 69, 225));
   cursor: pointer;
 }
 
@@ -543,7 +543,7 @@ p {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-row-gap: 10px;
+    row-gap: 10px;
     margin: 0 10px;
   }
 
@@ -563,7 +563,7 @@ p {
     grid-template-areas:  'recent playoffs'
                           'social next'
                           'social sub';
-    grid-column-gap: 30px;
+    column-gap: 30px;
     grid-template-rows: auto;
   }
 
@@ -639,7 +639,7 @@ p {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-row-gap: 10px;
+    row-gap: 10px;
     margin: 0 10px;
   }
 

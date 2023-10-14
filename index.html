@@ -700,13 +700,8 @@
 				<hr style="margin: 0 auto 30px 0" />
 
 				<div class="next-match__board">
-					<h3>CHAMPIONSHIP QUARTER FINALS</h3>
-					<div class="display-date">
-						<span id="day">day</span>,
-						<span id="daynum">00</span>
-						<span id="month">month</span>
-						<span id="year">0000</span>
-					</div>
+					<h3>CHUNG KẾT</h3>
+					<p>Chủ nhật 31 - 12 - 2023</p>
 					<div class="next-match__board__fight">
 						<div class="next-match__board__fight__team-1">
 							<img src="./images/esport/team-logo/t1.jpg" alt="">
@@ -720,10 +715,9 @@
 			</div>
 
 			<div class="subscribe">
-				<h3>Subscribe Now!</h3>
+				<h3>Đăng kí ngay</h3>
 				<p>
-					Receive the latest news from the team:game new adquisitionsand
-					professional match result.
+					Hãy để lại email để nhận những tin tức hay và nóng hổi qua email.
 				</p>
 				<form method="POST" action="">
 					<input type="email" id="email" name="email" placeholder="Your email address..." />
@@ -736,7 +730,7 @@
 	<!-- Footer -->
 	<footer class="footer">
 		<!-- Grid column -->
-		<div>
+		<div class="footer__tripleL">
 			<!-- Content -->
 			<h2>
 				<a href="">
@@ -773,7 +767,7 @@
 		<!-- Grid column -->
 
 		<!-- Grid column -->
-		<div>
+		<div class="footer__site">
 			<!-- Links -->
 			<h2>
 				<i class="fa-solid fa-hashtag mr-4" style="color: #4da8a4"></i>
@@ -785,11 +779,14 @@
 			<p>
 				<a href="#!">Esport: LoL, Dota, Valorant, CSGO, ...</a>
 			</p>
+			<h4>
+				<a href="./survey-form.html">Hãy giúp chúng tôi làm tí khảo sát nhé!</a>
+			</h4>
 		</div>
 		<!-- Grid column -->
 
 		<!-- Grid column -->
-		<div>
+		<div class="footer__contact">
 			<!-- Links -->
 			<h2>
 				<i class="fa-regular fa-address-card mr-4" style="color: #4da8a4"></i>
@@ -817,14 +814,14 @@
 		<!-- Grid column -->
 
 		<!-- Grid column -->
-		<div class="post-gallery">
+		<div class="footer__gallery">
 			<!-- Links -->
 			<h2>
 				<i class="fa-regular fa-image mr-4" style="color: #4da8a4"></i>
 				Post gallery
 			</h2>
 
-			<div class="post-gallery__item mb-4">
+			<div class="footer__gallery__item mb-4">
 				<a href=""><img src="./images/home/img1.jpg" alt="anh1" /></a>
 				<a href=""><img src="./images/home/img2.jpg" alt="anh1" /></a>
 				<a href=""><img src="./images/home/img3.jpg" alt="anh1" /></a>
@@ -915,52 +912,6 @@
 				else loveIcon.classList.add('active');
 			};
 		});
-	</script>
-
-	<!-- Current Day javascript -->
-	<script>
-		function updateDate() {
-			let today = new Date();
-
-			let dayName = today.getDay(),
-				dayNum = today.getDate(),
-				month = today.getMonth(),
-				year = today.getFullYear();
-
-			const months = [
-				"January",
-				"February",
-				"March",
-				"April",
-				"May",
-				"June",
-				"July",
-				"August",
-				"September",
-				"October",
-				"November",
-				"December",
-			];
-			const dayWeek = [
-				"Sunday",
-				"Monday",
-				"Tuesday",
-				"Wednesday",
-				"Thursday",
-				"Friday",
-				"Saturday",
-			];
-			// value -> ID of the html element
-			const IDCollection = ["day", "daynum", "month", "year"];
-			// return value array with number as a index
-			const val = [dayWeek[dayName], dayNum, months[month], year];
-			for (let i = 0; i < IDCollection.length; i++) {
-				document.getElementById(IDCollection[i]).firstChild.nodeValue =
-					val[i];
-			}
-		}
-
-		updateDate();
 	</script>
 
 	<!-- When the user scrolls down, hide the header. When the user scrolls up, show the header -->

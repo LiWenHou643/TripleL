@@ -26,16 +26,13 @@
 		</a>
 		<ul class="header__navbar">
 			<li class="header__navbar__item">
-				<a href="#home">HOME</a>
-			</li>
-			<li class="header__navbar__item">
 				<a href="./sport.html">SPORT</a>
 			</li>
 			<li class="header__navbar__item">
-				<a class="header__navbar__item" href="./esport.html">ESPORT</a>
+				<a href="./home.html">HOME</a>
 			</li>
 			<li class="header__navbar__item">
-				<a class="header__navbar__item--active" href="./survey-form.html">SURVEY</a>
+				<a href="./esport.html">ESPORT</a>
 			</li>
 		</ul>
 		<!-- Mobile -->
@@ -82,7 +79,7 @@
 	<!-- Main -->
 	<main class="main">
 		<div class="survey-form__container">
-			<form method="POST" action="">
+			<form method="POST" action="" onsubmit="return validateForm()">
 				<fieldset>
 					<legend class="survey-form__title">PHIẾU KHẢO SÁT</legend>
 					<div class="survey-form__item">
@@ -118,7 +115,7 @@
 	<!-- Footer -->
 	<footer class="footer">
 		<!-- Grid column -->
-		<div>
+		<div class="footer__tripleL">
 			<!-- Content -->
 			<h2>
 				<a href="">
@@ -155,7 +152,7 @@
 		<!-- Grid column -->
 
 		<!-- Grid column -->
-		<div>
+		<div class="footer__site">
 			<!-- Links -->
 			<h2>
 				<i class="fa-solid fa-hashtag mr-4" style="color: #4da8a4"></i>
@@ -167,11 +164,14 @@
 			<p>
 				<a href="#!">Esport: LoL, Dota, Valorant, CSGO, ...</a>
 			</p>
+			<h4>
+				<a href="./survey-form.html">Hãy giúp chúng tôi làm tí khảo sát nhé!</a>
+			</h4>
 		</div>
 		<!-- Grid column -->
 
 		<!-- Grid column -->
-		<div>
+		<div class="footer__contact">
 			<!-- Links -->
 			<h2>
 				<i class="fa-regular fa-address-card mr-4" style="color: #4da8a4"></i>
@@ -199,14 +199,14 @@
 		<!-- Grid column -->
 
 		<!-- Grid column -->
-		<div class="post-gallery">
+		<div class="footer__gallery">
 			<!-- Links -->
 			<h2>
 				<i class="fa-regular fa-image mr-4" style="color: #4da8a4"></i>
 				Post gallery
 			</h2>
 
-			<div class="post-gallery__item mb-4">
+			<div class="footer__gallery__item mb-4">
 				<a href=""><img src="./images/home/img1.jpg" alt="anh1" /></a>
 				<a href=""><img src="./images/home/img2.jpg" alt="anh1" /></a>
 				<a href=""><img src="./images/home/img3.jpg" alt="anh1" /></a>
@@ -221,6 +221,14 @@
 	</footer>
 	<!-- Footer -->
 
+	<!-- Submit button click-->
+	<script>
+		let submitBtn = document.querySelector('.survey-form__submit-btn');
+		submitBtn.onclick = (e) => {
+			e.preventDefault();
+			alert('send');
+		}
+	</script>
 
 	<!-- When the user scrolls down, hide the header. When the user scrolls up, show the header -->
 	<script>
