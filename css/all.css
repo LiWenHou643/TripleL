@@ -35,7 +35,9 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-
+.header__navbar__item {
+	margin: 0 5px;
+}
 .header__navbar__item a {
 	display: block;
 	color: white;
@@ -215,7 +217,6 @@ footer .footer__gallery img:hover {
 		display: block;
 		position: absolute;
 		top: 60px;
-		height: 100px;
 		width: 100%;
 		background-color: #1a1a1a;
 	}

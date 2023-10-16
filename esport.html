@@ -478,52 +478,52 @@
 
 		<!-- main sidebar -->
 		<div class="main__sidebar">
-			<div class="follow-us">
-				<h2>THEO DÕI CHÚNG TÔI</h1>
+			<section class="follow-us">
+				<h2>THEO DÕI CHÚNG TÔI</h2>
 
-					<hr style="margin: 0 auto 5px 0" />
-					<hr style="margin: 0 auto 30px 0" />
+				<hr style="margin: 0 auto 5px 0" />
+				<hr style="margin: 0 auto 30px 0" />
 
-					<ul class="social-page__list">
-						<li class="social-page__item facebook-page">
-							<i class="fa-brands fa-facebook-f"></i>
-							<div class="social-page__item__content">
-								<p>FACEBOOK</p>
-								<p>4,032,001 LIKES</p>
-							</div>
-							<i class="fa-regular fa-square-plus"></i>
-						</li>
+				<ul class="social-page__list">
+					<li class="social-page__item facebook-page">
+						<i class="fa-brands fa-facebook-f"></i>
+						<div class="social-page__item__content">
+							<p>FACEBOOK</p>
+							<p>4,032,001 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
 
-						<li class="social-page__item twitter-page">
-							<i class="fa-brands fa-twitter"></i>
-							<div class="social-page__item__content">
-								<p>TWITTER</p>
-								<p>3,294,213 LIKES</p>
-							</div>
-							<i class="fa-regular fa-square-plus"></i>
-						</li>
+					<li class="social-page__item twitter-page">
+						<i class="fa-brands fa-twitter"></i>
+						<div class="social-page__item__content">
+							<p>TWITTER</p>
+							<p>3,294,213 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
 
-						<li class="social-page__item youtube-page">
-							<i class="fa-brands fa-youtube"></i>
-							<div class="social-page__item__content">
-								<p>YOUTUBE</p>
-								<p>2,953,314 LIKES</p>
-							</div>
-							<i class="fa-regular fa-square-plus"></i>
-						</li>
+					<li class="social-page__item youtube-page">
+						<i class="fa-brands fa-youtube"></i>
+						<div class="social-page__item__content">
+							<p>YOUTUBE</p>
+							<p>2,953,314 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
 
-						<li class="social-page__item tiktok-page">
-							<i class="fa-brands fa-tiktok"></i>
-							<div class="social-page__item__content">
-								<p>TIKTOK</p>
-								<p>3,953,314 LIKES</p>
-							</div>
-							<i class="fa-regular fa-square-plus"></i>
-						</li>
-					</ul>
-			</div>
+					<li class="social-page__item tiktok-page">
+						<i class="fa-brands fa-tiktok"></i>
+						<div class="social-page__item__content">
+							<p>TIKTOK</p>
+							<p>3,953,314 LIKES</p>
+						</div>
+						<i class="fa-regular fa-square-plus"></i>
+					</li>
+				</ul>
+			</section>
 
-			<div class="recent-post">
+			<section class="recent-post">
 				<h2>BÀI VIẾT GẦN ĐÂY</h2>
 
 				<hr style="margin: 0 auto 5px 0" />
@@ -576,9 +576,9 @@
 						</div>
 					</li>
 				</ul>
-			</div>
+			</section>
 
-			<div class="playoffs">
+			<section class="playoffs">
 				<h2>PLAYOFFS</h2>
 
 				<hr style="margin: 0 auto 5px 0" />
@@ -691,9 +691,9 @@
 						<td>9</td>
 					</tr>
 				</table>
-			</div>
+			</section>
 
-			<div class="next-match">
+			<section class="next-match">
 				<h2>TRẬN TIẾP THEO</h2>
 
 				<hr style="margin: 0 auto 5px 0" />
@@ -712,9 +712,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="subscribe">
+			<section class="subscribe">
 				<h3>Đăng kí ngay</h3>
 				<p>
 					Hãy để lại email để nhận những tin tức hay và nóng hổi qua email.
@@ -723,7 +723,7 @@
 					<input type="email" id="email" name="email" placeholder="Your email address..." />
 					<button>SEND</button>
 				</form>
-			</div>
+			</section>
 		</div>
 	</main>
 
@@ -917,14 +917,14 @@
 	<!-- When the user scrolls down, hide the header. When the user scrolls up, show the header -->
 	<script>
 		var prevScrollpos = window.pageYOffset;
-		window.onscroll = function() {
-		var currentScrollPos = window.pageYOffset;
-		if (prevScrollpos > currentScrollPos) {
-			document.querySelector('.header').style.top = '0';
-		} else {
-			document.querySelector('.header').style.top = '-60px';
-		}
-		prevScrollpos = currentScrollPos;
+		window.onscroll = function () {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.querySelector('.header').style.top = '0';
+			} else {
+				document.querySelector('.header').style.top = '-60px';
+			}
+			prevScrollpos = currentScrollPos;
 		}
 	</script>
 </body>
