@@ -79,37 +79,44 @@
 	<!-- Main -->
 	<main class="main">
 		<div class="survey-form__container">
-			<form method="POST" action="" onsubmit="return validateForm()">
+			<form method="POST" action="">
 				<fieldset>
 					<legend class="survey-form__title">PHIẾU KHẢO SÁT</legend>
 					<div class="survey-form__item">
-						<label>Họ tên</label>
-						<input type="text" required>
+						<label for="fname">Họ tên</label>
+						<span>(*)</span>
+						<input id="fname" type="text">
+						<p></p>
 					</div>
 					<div class="survey-form__item">
-						<label>Email</label>
-						<input type="email" required>
+						<label for="email">Email</label>
+						<span>(*)</span>
+						<input id="email" type="email">
+						<p></p>
 					</div>
 					<div class="survey-form__item">
-						<label>Đóng góp ý kiến</label>
-						<textarea name="" rows="10" required></textarea>
+						<label for="feedback">Đóng góp ý kiến</label>
+						<span>(*)</span>
+						<textarea id="feedback" name="" rows="10" required></textarea>
+						<p></p>
 					</div>
 					<div class="survey-form__item">
-						<label for="cars" style="margin-right: 100px;">Bạn thích đọc tin tức nào :</label>
-						<select name="cars" id="cars" style="width: 200px; text-align: center;">
+						<label>Bạn thích đọc tin tức nào :</label>
+						<span>(*)</span>
+						<select>
 							<option value=""> -- Chọn --</option>
 							<option value="Sport">Sport</option>
 							<option value="Esport">Esport</option>
 							<option value="Both">Cả hai</option>
 						</select>
+						<p></p>
 					</div>
-					<button class="survey-form__submit-btn" type="submit">
+					<button class="survey-form__submit-btn">
 						<span>Gửi</span>
 					</button>
 				</fieldset>
 			</form>
 		</div>
-
 	</main>
 
 	<!-- Footer -->
@@ -221,13 +228,81 @@
 	</footer>
 	<!-- Footer -->
 
-	<!-- Submit button click-->
+	<!-- Submit form-->
 	<script>
-		let submitBtn = document.querySelector('.survey-form__submit-btn');
+		const name = document.querySelector('.survey-form__item input[id="fname"]')
+		const mail = document.querySelector('.survey-form__item input[id="email"]')
+		const feedback = document.querySelector('.survey-form__item textarea[id="feedback"]')
+		const select = document.querySelector('.survey-form__item select')
+
+
+		function formCheck() {
+			var nameValid = mailValid = feedbackValid = selectValid = false
+
+			if (name.value.length < 4) {
+				const err = name.closest('.survey-form__item').lastElementChild
+				err.innerHTML = 'Họ tên phải có ít nhất 4 kí tự'
+			} else {
+				const err = name.closest('.survey-form__item').lastElementChild
+				err.innerHTML = ''
+				nameValid = true
+			}
+
+			// Kiểm tra email có hợp lệ
+			const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+			if (emailRegex.test(mail.value) == false) {
+				const err = mail.closest('.survey-form__item').lastElementChild
+				err.innerHTML = 'Email không hợp lệ'
+			} else {
+				const err = mail.closest('.survey-form__item').lastElementChild
+				err.innerHTML = ''
+				mailValid = true
+			}
+
+			// Kiểm tra feedback có hợp lệ
+			if (feedback.value.length < 1) {
+				const err = feedback.closest('.survey-form__item').lastElementChild
+				err.innerHTML = 'Feedback không được bỏ trống'
+			} else {
+				const err = feedback.closest('.survey-form__item').lastElementChild
+				err.innerHTML = ''
+				feedbackValid = true
+			}
+
+			// Kiểm tra select option
+			if (select.value == '') {
+				const err = select.closest('.survey-form__item').lastElementChild
+				err.innerHTML = 'Hãy lựa chọn'
+			} else {
+				const err = select.closest('.survey-form__item').lastElementChild
+				err.innerHTML = ''
+				selectValid = true
+			}
+			return nameValid && mailValid && feedbackValid && selectValid
+		};
+
+		const num = 'number'
+		if (typeof localStorage[num] === "undefined") {
+			localStorage.setItem(num, 1)
+		}
+
+		const submitBtn = document.querySelector('.survey-form__submit-btn');
+
 		submitBtn.onclick = (e) => {
 			e.preventDefault();
-			alert('send');
+			if (formCheck()) {
+				alert('Chúng tôi đã ghi nhận khảo sát vào localstorage.')
+				var val = localStorage.getItem(num)
+				localStorage.setItem(val,JSON.stringify({name:name.value,
+														mail:mail.value,
+														feedback:feedback.value,
+														like:select.value}))
+				val++;
+				localStorage.setItem(num,val)
+			}
 		}
+
+
 	</script>
 
 	<!-- When the user scrolls down, hide the header. When the user scrolls up, show the header -->

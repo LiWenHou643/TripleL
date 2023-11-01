@@ -5,7 +5,11 @@ body {
 
 .header {
     background-color: #000000da;
-  }
+}
+
+.header__navbar__item a:hover:not(.header__navbar__item--active) {
+    background-color: #363636;
+}
 
 .main {
     min-height: 1000px;
@@ -32,7 +36,7 @@ body {
     margin: 20px;
 }
 
-.main .survey-form__container fieldset legend{
+.main .survey-form__container fieldset legend {
     text-align: center;
     font-size: 1.6rem;
 }
@@ -72,6 +76,26 @@ textarea {
     transition: .5s;
 }
 
+.main .survey-form__container .survey-form__item p {
+    color: red;
+    margin: 0 0 20px;
+}
+
+.main .survey-form__container .survey-form__item span {
+    color: red;
+}
+
+.main .survey-form__container .survey-form__item select {
+    background-color: #00000000;
+    color: #fff;
+    width: 150px;
+    margin-left: 10%;
+}
+
+.main .survey-form__container .survey-form__item select option {
+    background-color: #000000;
+    text-align: center;
+}
 
 .main .survey-form__container .survey-form__submit-btn {
     align-items: center;
