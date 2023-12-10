@@ -1,0 +1,261 @@
+/* Người thiết kế Home Page: Lê Nhật Bằng B2103489 */
+
+/* global settings */
+body,
+footer {
+	background-color: #fff !important;
+}
+
+.header__homelink {
+	width: fit-content;
+}
+
+footer {
+	border-top: none !important;
+	margin-top: 0 !important;
+}
+
+footer h2 {
+	color: #333 !important;
+}
+/* global settings */
+
+.content {
+	background-color: #b4b4b3;
+	display: grid;
+	grid-template-areas:
+		'slide slide slide'
+		'sport hot esport';
+	grid-template-columns: 25% auto 25%;
+	grid-template-rows: 500px auto;
+	gap: 10px;
+	padding: 10px;
+	padding-top: 70px;
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+		grid-template-areas:
+			'slide slide'
+			'hot hot'
+			'sport esport' !important;
+		grid-template-columns: auto auto !important;
+		grid-template-rows: 300px auto !important;
+	}
+
+	footer {
+		grid-template-columns: auto !important;
+		row-gap: 10px;
+	}
+
+	.slideshow img,
+	.slideshow__buttons,
+	.slideshow__dots {
+		width: 80% !important;
+	}
+}
+
+.content__article {
+	background-color: #eeeeee;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 15px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.content__article h2 {
+	text-align: left;
+	padding: 10px;
+	margin: 0;
+}
+
+.content__sport {
+	grid-area: sport;
+}
+
+.content__hot {
+	grid-area: hot;
+}
+
+.content__esport {
+	grid-area: esport;
+}
+
+/* News Card */
+.card {
+	max-width: 300px;
+	border: 2px solid #e8e8e8;
+	border-radius: 16px;
+	padding: 10px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+	border: 1px solid transparent;
+	transition: 0.3s;
+}
+
+.card:hover {
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card a {
+	text-decoration: none;
+}
+
+.card__img {
+	width: 80%;
+	height: 150px;
+	border-radius: 0.5rem;
+}
+
+.card__content {
+	padding: 1.1rem;
+}
+
+.card__content__title {
+	color: #111827;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.card__content__desc {
+	margin-top: 0.5rem;
+	max-height: 100px;
+	color: #6b7280;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.card__content__action {
+	display: inline-flex;
+	margin-top: 1rem;
+	color: #ffffff;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-weight: 500;
+	align-items: center;
+	gap: 0.25rem;
+	background-color: #2563eb;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+.card__content__action span {
+	transition: 0.3s ease;
+}
+
+.card__content__action:hover span {
+	transform: translateX(4px);
+}
+/* News Card */
+
+/* Hot News Card */
+.content__hot .card {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.content__hot .card__img {
+	max-width: 30%;
+}
+
+.content__hot .card__content {
+	text-align: left;
+}
+/* Hot News */
+
+/* Slideshow */
+.slideshow {
+	grid-area: slide;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slideshow img {
+	position: absolute;
+	top: 0;
+	border-radius: 10px;
+	display: none;
+	width: 60%;
+	height: 100%;
+}
+
+.slideshow img.active {
+	animation: slideChange 2.5s;
+	position: relative;
+	display: block;
+}
+
+@keyframes slideChange {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.slideshow__buttons {
+	width: 60%;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+}
+
+#slideshow__buttons__prev,
+#slideshow__buttons__next {
+	font-size: 4em;
+	width: 50px;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	color: #ff7300;
+	transition: background-color 0.4s ease;
+}
+
+#slideshow__buttons__prev:hover,
+#slideshow__buttons__next:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slideshow__dots {
+	width: 60%;
+	bottom: 30px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+}
+.slideshow__dots__item {
+	height: 15px;
+	width: 15px;
+	margin: 20px 5px 0;
+	border: #ff7300 solid 3px;
+	border-radius: 50%;
+	transition: background-color 0.6s ease;
+}
+
+.slideshow__dots__item:hover,
+.slideshow__dots__item.active {
+	background-color: #ff7300;
+	cursor: pointer;
+}
+
+#slideshow__page {
+	position: absolute;
+	bottom: 10px;
+	color: #ff7300;
+	font-size: 16px;
+	font-weight: bold;
+}
+/* Slideshow */

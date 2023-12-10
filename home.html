@@ -1,0 +1,716 @@
+<!-- Người thiết kế Home Page: Lê Nhật Bằng B2103489 -->
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/home.css" />
+		<link rel="shortcut icon" href="./images/fav.png" type="image/x-icon" />
+		<title>Home | TripleL News</title>
+	</head>
+
+	<body>
+		<header class="header">
+			<a class="header__homelink" href="./home.html">
+				<img
+					src="./images/logo.png"
+					alt="logo"
+					class="header__homelink__logo"
+				/>
+			</a>
+			<ul class="header__navbar">
+				<li class="header__navbar__item">
+					<a href="./sport.html">SPORT</a>
+				</li>
+				<li class="header__navbar__item">
+					<a class="header__navbar__item--active" href="#home">HOME</a>
+				</li>
+				<li class="header__navbar__item">
+					<a href="./esport.html">ESPORT</a>
+				</li>
+			</ul>
+			<!-- Mobile -->
+			<a class="header__navbar-icon">
+				<i class="fa-solid fa-bars"></i>
+			</a>
+			<form class="header__search" method="get" action="">
+				<input
+					class="header__search__input"
+					type="text"
+					name="search"
+					placeholder=" Tìm kiếm"
+				/>
+				<button
+					class="header__search__button"
+					type="submit"
+					title="Tìm kiếm"
+					style="cursor: pointer"
+				>
+					<!-- button decoration -->
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="29"
+						height="29"
+						viewBox="0 0 29 29"
+						fill="none"
+					>
+						<g clip-path="url(#clip0_2_17)">
+							<g filter="url(#filter0_d_2_17)">
+								<path
+									d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
+									stroke="white"
+									stroke-width="3"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									shape-rendering="crispEdges"
+								></path>
+							</g>
+						</g>
+						<defs>
+							<filter
+								id="filter0_d_2_17"
+								x="-0.418549"
+								y="3.70435"
+								width="29.7139"
+								height="29.7139"
+								filterUnits="userSpaceOnUse"
+								color-interpolation-filters="sRGB"
+							>
+								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+								<feColorMatrix
+									in="SourceAlpha"
+									type="matrix"
+									values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									result="hardAlpha"
+								/>
+								<feOffset dy="4"></feOffset>
+								<feGaussianBlur stdDeviation="2"></feGaussianBlur>
+								<feComposite in2="hardAlpha" operator="out" />
+								<feColorMatrix
+									type="matrix"
+									values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+								/>
+								<feBlend
+									mode="normal"
+									in2="BackgroundImageFix"
+									result="effect1_dropShadow_2_17"
+								/>
+								<feBlend
+									mode="normal"
+									in="SourceGraphic"
+									in2="effect1_dropShadow_2_17"
+									result="shape"
+								/>
+							</filter>
+							<clipPath id="clip0_2_17">
+								<rect
+									width="28.0702"
+									height="28.0702"
+									fill="white"
+									transform="translate(0.403503 0.526367)"
+								/>
+							</clipPath>
+						</defs>
+					</svg>
+					<!-- button decoration -->
+				</button>
+			</form>
+		</header>
+
+		<main class="content">
+			<!-- Slide Show -->
+			<article class="slideshow">
+				<img
+					class="slideshow__item active"
+					src="./images/home/hot-news-1.png"
+					alt="hot-news-1"
+				/>
+				<img
+					class="slideshow__item"
+					src="./images/home/hot-news-2.jpg"
+					alt="hot-news-2"
+				/>
+				<img
+					class="slideshow__item"
+					src="./images/home/hot-news-3.jpg"
+					alt="hot-news-3"
+				/>
+				<img
+					class="slideshow__item"
+					src="./images/home/hot-news-4.png"
+					alt="hot-news-4"
+				/>
+				<img
+					class="slideshow__item"
+					src="./images/home/hot-news-5.png"
+					alt="hot-news-5"
+				/>
+
+				<section class="slideshow__buttons">
+					<button
+						id="slideshow__buttons__prev"
+						type="button"
+						style="cursor: pointer"
+					>
+						🢔
+					</button>
+					<button
+						id="slideshow__buttons__next"
+						type="button"
+						style="cursor: pointer"
+					>
+						🢖
+					</button>
+				</section>
+
+				<section class="slideshow__dots">
+					<span class="slideshow__dots__item active"></span>
+					<span class="slideshow__dots__item"></span>
+					<span class="slideshow__dots__item"></span>
+					<span class="slideshow__dots__item"></span>
+					<span class="slideshow__dots__item"></span>
+				</section>
+
+				<section id="slideshow__page">1 / 5</section>
+			</article>
+			<!-- Slide Show -->
+
+			<!-- Sport News -->
+			<article class="content__article content__sport">
+				<h2>Sport News</h2>
+
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/sport_news_1.png"
+						alt="sport-news 1"
+					/>
+					<div class="card__content">
+						<a href="./sport.html">
+							<span class="card__content__title">
+								Hoàng Đức vẫn là cầu thủ có giá trị nhất của đội tuyển Việt Nam
+							</span>
+						</a>
+
+						<p class="card__content__desc">
+							Dù không được trọng dụng thường xuyên dưới thời HLV Troussier
+							nhưng Hoàng Đức vẫn là cầu thủ có giá trị nhất của đội tuyển Việt
+							Nam. Theo Transfermarkt, Hoàng Đức có giá trị 400.000 Euro, xếp
+							thứ 2 là tiền đạo Tiến Linh 350.000 Euro.
+						</p>
+
+						<a class="card__content__action" href="./sport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+				<hr />
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/sport_news_2.png"
+						alt="sport-news 2"
+					/>
+					<div class="card__content">
+						<a href="./sport.html">
+							<span class="card__content__title">
+								TP.HCM và Bình Dương cùng hạ quyết tâm giành vé đi tiếp
+							</span>
+						</a>
+
+						<p class="card__content__desc">
+							TP.HCM và Bình Dương cùng hạ quyết tâm giành vé đi tiếp, nhưng
+							điều đương nhiên sẽ chỉ có một đội thành công với kế hoạch của
+							mình.
+						</p>
+
+						<a class="card__content__action" href="./sport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+				<hr />
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/sport_news_3.png"
+						alt="sport-news 3"
+					/>
+					<div class="card__content">
+						<a href="./sport.html">
+							<span class="card__content__title">
+								Vòng 9 Ngoại hạng Anh: Kịch bản rượt đuổi tỷ số "điên rồ" đã
+								xuất hiện trong trận đấu trên sân Craven Cottage
+							</span>
+						</a>
+
+						<p class="card__content__desc">
+							Vòng 9 Ngoại hạng Anh: Kịch bản rượt đuổi tỷ số "điên rồ" đã xuất
+							hiện trong trận đấu trên sân Craven Cottage. 5 bàn và 3 quả
+							penalty, vỡ òa phút 90 + 4 (Ngoại hạng Anh)
+						</p>
+
+						<a class="card__content__action" href="./sport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+			</article>
+			<!-- Sport News -->
+
+			<!-- Hot News -->
+			<article class="content__article content__hot">
+				<h2>Hot News</h2>
+
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/hot-news-1.png"
+						alt="hot-news 1"
+					/>
+					<div class="card__content">
+						<a href="./sport.html">
+							<span class="card__content__title">
+								HLV Pep Guardiola của Man City từng ví Andre Onana như một “tiền
+								vệ cầm trịch”
+							</span>
+						</a>
+
+						<p class="card__content__desc">
+							HLV Pep Guardiola của Man City từng ví Andre Onana như một “tiền
+							vệ cầm trịch” ở trận chung kết Champions League 2023. Điều đó cũng
+							nằm trong toan tính của Erik Ten Hag khi chiêu mộ Onana, nhằm tạo
+							ra cuộc cách mạng tại MU.
+						</p>
+
+						<a class="card__content__action" href="./sport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+				<hr />
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/hot-news-2.jpg"
+						alt="hot-news 2"
+					/>
+					<div class="card__content">
+						<a href="./esport.html">
+							<span class="card__content__title">
+								Trực tiếp Liên Minh ASIAD 2023 hôm nay 29/9: LMHT Việt Nam ngẩng
+								cao đầu rời cuộc chơi
+							</span>
+						</a>
+
+						<p class="card__content__desc">
+							Tuy không thể giành huy chương tại ASIAD 19, nhưng Việt Nam vẫn
+							khiến người hâm mộ hài lòng với màn trình diễn của mình. Vươn lên
+							với màn trình diễn thuyết phục, đồng thời khiến chủ nhà Trung Quốc
+							toát mồ hôi trong ván đấu quyết định, đội tuyển LMHT Việt Nam đã
+							kết thúc giải đấu với những ấn tượng khó phai.
+						</p>
+
+						<a class="card__content__action" href="./esport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+				<hr />
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/hot-news-3.jpg"
+						alt="hot-news 3"
+					/>
+					<div class="card__content">
+						<a href="./esport.html">
+							<span class="card__content__title">
+								ASIAD 19: Cuộc đua tìm kiếm tấm huy chương vàng LMHT đã ngã ngũ,
+								hướng đến một CKTG bùng nổ
+							</span>
+						</a>
+
+						<p class="card__content__desc">
+							Tiếp đến trận Chung kết, không có gì bất ngờ khi Hàn Quốc thành
+							công có được tấm HCV danh giá. Đại diện xứ kim chi kiểm soát hoàn
+							toàn thế trận và không cho Đài Bắc Trung Hoa có bất cứ cơ hội phản
+							công nào. Với tấm HCV danh giá này, các tuyển thủ LMHT Hàn Quốc đã
+							chính thức được miễn NVQS theo quy định của Hàn Quốc. Các tuyển
+							thủ này sẽ chỉ phải lao động công ích trong một thời gian ngắn và
+							sẽ không ảnh hưởng đến thi đấu tại các giải đấu của Riot Games.
+						</p>
+
+						<a class="card__content__action" href="./esport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+				<hr />
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/hot-news-4.png"
+						alt="hot-news 4"
+					/>
+					<div class="card__content">
+						<a href="./sport.html">
+							<span class="card__content__title">
+								Trực tiếp họp báo MU đấu Galatasaray: Ten Hag bày cách thắng
+								trận, Antony - Hojlund trở lại
+							</span>
+						</a>
+
+						<p class="card__content__desc">
+							Trực tiếp họp báo MU đấu Galatasaray: Ten Hag bày cách thắng trận,
+							Antony - Hojlund trở lại. Bộ đôi Hojlund và Antony đã vắng mặt ở
+							trận gặp Everton vì vấn đề thể lực.
+						</p>
+
+						<a class="card__content__action" href="./sport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+				<hr />
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/hot-news-5.png"
+						alt="hot-news 5"
+					/>
+					<div class="card__content">
+						<a href="./sport.html">
+							<span class="card__content__title">
+								Trực tiếp bóng đá PSG - Newcastle: Thử thách khó khăn cho "chích
+								chòe" (Cúp C1)
+							</span>
+						</a>
+
+						<p class="card__content__desc">
+							Trực tiếp bóng đá PSG - Newcastle: Thử thách khó khăn cho "chích
+							chòe" (Cúp C1). PSG đang rất muốn tận dụng lợi thế sân nhà để trả
+							món nợ đã thua Newcastle ở trận lượt đi.
+						</p>
+
+						<a class="card__content__action" href="./sport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+			</article>
+			<!-- Hot News -->
+
+			<!-- Esport News -->
+			<article class="content__article content__esport">
+				<h2>Esport News</h2>
+
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/es-news-1.jpg"
+						alt="esport-news 1"
+					/>
+					<div class="card__content">
+						<a href="./esport.html">
+							<span class="card__content__title"
+								>CKTG 2023: Danh sách các đội giành vé tới CKTG tại Hàn Quốc vào
+								tháng 10 năm nay</span
+							>
+						</a>
+
+						<p class="card__content__desc">
+							Các giải đấu quốc nội LMHT đang dần kết thúc và tìm ra những cái
+							tên xuất sắc nhất tiến đến CKTG 2023. Mùa giải 2023, Riot Games
+							không chỉ đưa CKTG quay trở lại xứ Kim Chi mà còn mang đến một
+							“luồng gió” mới với thể thức thi đấu hấp dẫn mới. CKTG 2023 sẽ
+							được đồng tổ chức bởi Thành phố Seoul và Thành phố Busan vào tháng
+							10 tới đây.
+						</p>
+
+						<a class="card__content__action" href="./esport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+				<hr />
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/es-news-2.jpg"
+						alt="esport-news 2"
+					/>
+					<div class="card__content">
+						<a href="./esport.html">
+							<span class="card__content__title"
+								>LMHT: Người hâm mộ BTS tranh cãi nảy lửa về việc Faker được
+								miễn "nghĩa vụ quân sự"</span
+							>
+						</a>
+
+						<p class="card__content__desc">
+							Esports tại Hàn Quốc từ lâu đã rất phát triển và được coi như một
+							môn thể thao chính thống. Các tuyển thủ tại xứ Kim Chi cũng được
+							công nhận như một VĐV Quốc Gia. Thậm chí tại Hàn Quốc còn có những
+							trường học chuyên đào tạo tuyển thủ để hướng đến một môn thể thao
+							phát triển. Bởi vậy, khi Esports được công nhận tại ASIAD 19 như
+							một môn thể thao truyền thống, cạnh tranh huy chương, các tuyển
+							thủ đã không bỏ lỡ cơ hội này để giành về tấm HCV.
+						</p>
+
+						<a class="card__content__action" href="./esport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+				<hr />
+				<section class="card">
+					<img
+						class="card__img"
+						src="./images/home/es-news-3.jpg"
+						alt="esport-news 3"
+					/>
+					<div class="card__content">
+						<a href="./esport.html">
+							<span class="card__content__title"
+								>Riot Games thay đổi quy tắc đội hình cho mùa giải Valorant
+								Champions Tour 2024</span
+							>
+						</a>
+
+						<p class="card__content__desc">
+							Việc cho phép game thủ hai chiều là một trong những thay đổi lớn
+							nhất đối với quy tắc xây dựng đội hình năm 2024. Những người chơi
+							này đủ điều kiện để thi đấu cho đội VCT và cả đội phụ. Các đội VCT
+							có thể có tối đa 2 người chơi hai chiều được chỉ định trong danh
+							sách đầy đủ của họ. Đặc biệt, Riot cũng đang thiết lập một khoảng
+							thời hạn 14 ngày gọi là "safe harbor" để khi những tuyển thủ rời
+							khỏi các đội tuyển tham gia giải VCT có thể tìm được bến đỗ mới.
+						</p>
+
+						<a class="card__content__action" href="./esport.html">
+							Xem chi tiết
+							<span aria-hidden="true"> → </span>
+						</a>
+					</div>
+				</section>
+			</article>
+			<!-- Esport News -->
+		</main>
+
+		<footer class="footer">
+			<!-- Grid column -->
+			<div class="footer-tripleL">
+				<!-- Content -->
+				<h2>
+					<a href="">
+						<img src="./images/logo.png" width="80px" height="50px" alt="logo" />
+					</a>
+					<span class="ml-3">TripleL</span>
+				</h2>
+				<p>
+					Chúng tôi luôn săn lùng những tin tức hot hòn họt, luôn cập nhật nhanh
+					chóng và chính xác đến cho mọi người.
+				</p>
+				<p>Theo dõi chúng tôi:</p>
+				<div class="social-link">
+					<a href="">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+					<a href="">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="">
+						<i class="fab fa-google"></i>
+					</a>
+					<a href="">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+			</div>
+			<!-- Grid column -->
+	
+			<!-- Grid column -->
+			<div class="footer-site">
+				<!-- Links -->
+				<h2>
+					<i class="fa-solid fa-hashtag mr-4" style="color: #4da8a4"></i>
+					Site
+				</h2>
+				<p>
+					<a href="#!">Sport: Football, Basketball, Badminton, Chess, ...</a>
+				</p>
+				<p>
+					<a href="#!">Esport: LoL, Dota, Valorant, CSGO, ...</a>
+				</p>
+				<h4>
+					<a href="./survey-form.html">Hãy giúp chúng tôi làm tí khảo sát nhé!</a>
+				</h4>
+			</div>
+			<!-- Grid column -->
+	
+			<!-- Grid column -->
+			<div class="footer-contact">
+				<!-- Links -->
+				<h2>
+					<i class="fa-regular fa-address-card mr-4" style="color: #4da8a4"></i>
+					Contact
+				</h2>
+				<p>
+					<i class="fa-solid fa-location mr-4" style="color: #4da8a4"></i>CTU, CAN THO, VIETNAM
+				</p>
+				<hr class="mr-5" />
+				<p>
+					<i class="fa-solid fa-envelope mr-4" style="color: #4da8a4"></i>tripleL@gmail.com
+				</p>
+				<hr class="mr-5" />
+				<p>
+					<i class="fa-solid fa-phone mr-4" style="color: #4da8a4"></i>+ 01 234
+					567 88
+				</p>
+				<hr class="mr-5" />
+				<p>
+					<i class="fa-solid fa-phone mr-4" style="color: #4da8a4"></i>+ 01 234
+					567 89
+				</p>
+				<hr class="mr-5" />
+			</div>
+			<!-- Grid column -->
+	
+			<!-- Grid column -->
+			<div class="footer-gallery">
+				<!-- Links -->
+				<h2>
+					<i class="fa-regular fa-image mr-4" style="color: #4da8a4"></i>
+					Post gallery
+				</h2>
+	
+				<div class="footer-gallery__item mb-4">
+					<a href=""><img src="./images/home/img1.jpg" alt="anh1" /></a>
+					<a href=""><img src="./images/home/img2.jpg" alt="anh1" /></a>
+					<a href=""><img src="./images/home/img3.jpg" alt="anh1" /></a>
+					<a href=""><img src="./images/home/img4.jpg" alt="anh1" /></a>
+					<a href=""><img src="./images/home/img5.jpg" alt="anh1" /></a>
+					<a href=""><img src="./images/home/img6.jpg" alt="anh1" /></a>
+					<a href=""><img src="./images/home/img7.jpg" alt="anh1" /></a>
+					<a href=""><img src="./images/home/img8.jpg" alt="anh1" /></a>
+				</div>
+			</div>
+			<!-- Grid column -->
+		</footer>
+		<!-- Footer -->
+
+		<script>
+			let slideItems = document.querySelectorAll('.slideshow__item');
+			let nextBtn = document.getElementById('slideshow__buttons__next');
+			let prevBtn = document.getElementById('slideshow__buttons__prev');
+			let dotItems = document.querySelectorAll('.slideshow__dots__item');
+			let page = document.getElementById('slideshow__page');
+
+			const lengthItems = slideItems.length - 1;
+			let active = 0;
+
+			nextBtn.onclick = function () {
+				active = active + 1 <= lengthItems ? active + 1 : 0;
+				reloadSlider();
+			};
+			prevBtn.onclick = function () {
+				active = active - 1 >= 0 ? active - 1 : lengthItems;
+				reloadSlider();
+			};
+
+			dotItems.forEach((dot, index) => {
+				dot.addEventListener('click', () => {
+					active = index;
+					reloadSlider();
+				});
+			});
+
+			// auto change slide
+			let refreshInterval = setInterval(() => {
+				nextBtn.click();
+			}, 3000);
+
+			function reloadSlider() {
+				let last_active_item = document.querySelector(
+					'.slideshow__item.active'
+				);
+				last_active_item.classList.remove('active');
+				slideItems[active].classList.add('active');
+
+				let last_active_dot = document.querySelector(
+					'.slideshow__dots__item.active'
+				);
+				last_active_dot.classList.remove('active');
+				dotItems[active].classList.add('active');
+
+				page.textContent = active + 1 + ' / 5';
+			}
+		</script>
+
+		<!-- Mobile: header navbar-->
+		<script>
+			// Navbar
+			let menuIcon = document.querySelector('.header__navbar-icon');
+			let header = document.querySelector('.header');
+			menuIcon.onclick = () => {
+				if (header.classList.contains('active')) header.classList.remove('active');
+				else header.classList.add('active');
+			}
+
+			// Search
+			let searchBtn = document.querySelector('.header__search__button');
+			let searchBar = document.querySelector('.header__search');
+			searchBtn.onclick = () => {
+				if (searchBar.classList.contains('active')) searchBar.classList.remove('active');
+				else searchBar.classList.add('active');
+			}
+		</script>
+		<!-- Ẩn header khi cuộn xuống, hiện khi cuộn lên -->
+		<script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function () {
+				var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos > currentScrollPos) {
+					document.querySelector('.header').style.top = '0';
+				} else {
+					document.querySelector('.header').style.top = '-60px';
+				}
+				prevScrollpos = currentScrollPos;
+			}
+		</script>
+	</body>
+</html>

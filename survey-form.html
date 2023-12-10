@@ -125,7 +125,7 @@
 	<!-- Footer -->
 	<footer class="footer">
 		<!-- Grid column -->
-		<div class="footer__tripleL">
+		<div class="footer-tripleL">
 			<!-- Content -->
 			<h2>
 				<a href="">
@@ -139,7 +139,7 @@
 			</p>
 			<p>Theo dõi chúng tôi:</p>
 			<div class="social-link">
-				<a href="#">
+				<a href="">
 					<i class="fa-brands fa-facebook-f"></i>
 				</a>
 				<a href="">
@@ -162,7 +162,7 @@
 		<!-- Grid column -->
 
 		<!-- Grid column -->
-		<div class="footer__site">
+		<div class="footer-site">
 			<!-- Links -->
 			<h2>
 				<i class="fa-solid fa-hashtag mr-4" style="color: #4da8a4"></i>
@@ -181,7 +181,7 @@
 		<!-- Grid column -->
 
 		<!-- Grid column -->
-		<div class="footer__contact">
+		<div class="footer-contact">
 			<!-- Links -->
 			<h2>
 				<i class="fa-regular fa-address-card mr-4" style="color: #4da8a4"></i>
@@ -209,14 +209,14 @@
 		<!-- Grid column -->
 
 		<!-- Grid column -->
-		<div class="footer__gallery">
+		<div class="footer-gallery">
 			<!-- Links -->
 			<h2>
 				<i class="fa-regular fa-image mr-4" style="color: #4da8a4"></i>
 				Post gallery
 			</h2>
 
-			<div class="footer__gallery__item mb-4">
+			<div class="footer-gallery__item mb-4">
 				<a href=""><img src="./images/home/img1.jpg" alt="anh1" /></a>
 				<a href=""><img src="./images/home/img2.jpg" alt="anh1" /></a>
 				<a href=""><img src="./images/home/img3.jpg" alt="anh1" /></a>
@@ -306,7 +306,6 @@
 		feedback.onblur = () => feedbackCheck()
 
 		const form = document.querySelector('main form')
-		console.log(form)
 		form.addEventListener('submit',(e) => {
 			e.preventDefault()
 			let valid = true
