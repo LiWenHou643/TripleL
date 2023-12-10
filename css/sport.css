@@ -951,9 +951,6 @@ body::after {
 }
 
 @media screen and (max-width: 768px) {
-	.main__article {
-		padding-top: 20px;
-	}
 	.main__article .slideshow__container{
 		margin-bottom: 5px;
 	}
