@@ -220,7 +220,7 @@ footer h2 {
 	width: 50px;
 	background-color: rgba(255, 255, 255, 0);
 	border: none;
-	color: #ff7300;
+	color: #008cff;
 	transition: background-color 0.4s ease;
 }
 
@@ -240,21 +240,21 @@ footer h2 {
 	height: 15px;
 	width: 15px;
 	margin: 20px 5px 0;
-	border: #ff7300 solid 3px;
+	border: #008cff solid 3px;
 	border-radius: 50%;
 	transition: background-color 0.6s ease;
 }
 
 .slideshow__dots__item:hover,
 .slideshow__dots__item.active {
-	background-color: #ff7300;
+	background-color: #008cff;
 	cursor: pointer;
 }
 
 #slideshow__page {
 	position: absolute;
 	bottom: 10px;
-	color: #ff7300;
+	color: #008cff;
 	font-size: 16px;
 	font-weight: bold;
 }
