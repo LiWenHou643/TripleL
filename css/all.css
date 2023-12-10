@@ -200,8 +200,8 @@ footer .footer-gallery img:hover {
 
 /* Responsive web deign */
 
-/* Tablet: 740px < width <= 1024px  */
-@media screen and (min-width: 741px) and (max-width: 1024px) {	
+/* Tablet: 768px < width <= 1024px  */
+@media screen and (min-width: 769px) and (max-width: 1024px) {	
 	.footer {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 20px;
@@ -212,8 +212,8 @@ footer .footer-gallery img:hover {
 }
 
 
-/* Mobile: width <= 740px */
-@media screen and (max-width: 740px) {
+/* Mobile: width <= 768px */
+@media screen and (max-width: 768px) {
 	.header .header__navbar {
 		display: none;
 	}

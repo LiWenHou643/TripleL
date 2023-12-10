@@ -521,8 +521,8 @@ p {
 
 /* Responsive web deign */
 
-/* Tablet: 740px < width <= 1024px  */
-@media screen and (min-width: 741px) and (max-width: 1024px) {
+/* Tablet: 768px < width <= 1024px  */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .main {
     grid-template-columns: auto;
     grid-template-areas: 'article' 'sidebar';
@@ -614,8 +614,8 @@ p {
 }
 
 
-/* Mobile: width <= 740px */
-@media screen and (max-width: 740px) {
+/* Mobile: width <= 768px */
+@media screen and (max-width: 768px) {
   body::after {
     background-color: #000000c4;
   }
